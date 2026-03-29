@@ -7,6 +7,7 @@
     "prebuild": "tsx scripts/fetch-cards.ts",
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
