@@ -1,0 +1,1556 @@
+{
+  "items": [
+    {
+      "id": "1504a3cc-26ea-4415-8973-35fa6f14a7b8",
+      "external_id": "cyberpunk:v-streetkid",
+      "name": "V",
+      "subname": "Streetkid",
+      "display_name": "V - Streetkid",
+      "slug": "v-streetkid",
+      "rules_text": "GO SOLO DEFEATED Discard the top 3 cards of your deck. Then, choose 1 Braindance Program from your trash and add it to your hand.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b132a.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=mTHSP0ZOi2ZZjNlqPyPpeHh4o5JJMci5vlIERfdevbRkEXQdLUTyini3IdIi~-lg~Lsk85M6KFGMzFCqBrlYSXXMvhee~ySeyeE~qjjBbspuUUDQTfW97b~UrdtXEWnMQ6yVI6wp8nl1K5~zr0PC53DvouVqJgxRbGsfPw1rahOURFtYDuPTul~cvgo4wKVQPH5StXkukeCfnoy8BxFcqEnwfOCPwC3CZgRgTT0rk5yc4Z5w1WimW4~pTifHR7k5WbQ7olXSwuv11aDk5-mHTXH71fV3hQmKdVSIo3uE2ebbYr7htXKb5fMp6jwX5Vghc3msW6X~ckSNbkFbUtd4vQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b132a.webp",
+      "color": "Red",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Merc"
+      ],
+      "keywords": [
+        "Go Solo"
+      ],
+      "cost": 4,
+      "power": 3,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "132a",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "9e70c24e-f523-4cba-b70e-161793cd1a27",
+      "external_id": "cyberpunk:royce-psycho-on-the-edge",
+      "name": "Royce",
+      "subname": "Psycho on the Edge",
+      "display_name": "Royce - Psycho on the Edge",
+      "slug": "royce-psycho-on-the-edge",
+      "rules_text": "GO SOLO During your turn, this Legend has +2 power for each equipped Gear.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b131.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=gaqF1aTBTPemqC~WRqr0ZBMRTaVlkhbD4ILRNucCZMU8qcgtNbaHMVc8RQ75POpNB2cumDl3weBKFCKogBMFk99NsPlwSLHfyAuw-ye-f586tyEDlPVsMpkSL0g4Gg80lFoCS~dAokf9PdFi4gUYsxOHylQkwkneNhWLkc35FjF-mWq5rcWhOqjR1IsaPUhj7ex0oraredrV7NhEniXwKd101jV2N3bdOAecOtVg4~6UtgxCuxB7ckHoKSltjJ0cKB5qRzqbPlrS0uNTGiKgnFJviilGLR3e4xrr7JDEDkb9MC8gr6HpcErVdkKEFjRslH5sTlI4OSfHgn4utwBlPQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b131.webp",
+      "color": "Red",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Ganger",
+        "Maelstrom"
+      ],
+      "keywords": [
+        "Go Solo"
+      ],
+      "cost": 6,
+      "power": 6,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "131",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "23fc1451-7374-4c21-87ae-bb05d49f2836",
+      "external_id": "cyberpunk:yorinobu-arasaka-embracing-destruction",
+      "name": "Yorinobu Arasaka",
+      "subname": "Embracing Destruction",
+      "display_name": "Yorinobu Arasaka - Embracing Destruction",
+      "slug": "yorinobu-arasaka-embracing-destruction",
+      "rules_text": "The first time a friendly Arasaka unit attacks each turn, draw a card. Then, if you have less than 20 * (Street Cred), discard 1 card from your hand to your trash.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a001.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=S9MrnyWhh15Co7k7EA3~bFmdZQETtufjDcWn5zI8UxaM1n9eDyJ3~A0mam3tXCNtBopqhsG4QW~f3bMOLUjpo38O12WTXCB7iGvnmgZoCBM8~77jhJUv1OC0fZkLJTDaASB7uxo9S3MdpQmvbjMGdjchenz-nbJ6y3Wpmgv-QqtADfBC0t~6xB820~1QXl93hrmHHcYtlZaB8eehRGPXPP5SR~5l4Z5DumEhJpy9PdOInPtbq2ln4mqykdm1rU~aPU-9YrujMjnKFMCEVLlA~GgS9rp1HRnrZB~MER9AjWyikHXDu9hPh4-Kl-rjmrcO7WkBTmrGxq6nAQceTDimtA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a001.webp",
+      "color": "Red",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Arasaka",
+        "Corpo"
+      ],
+      "keywords": [],
+      "cost": null,
+      "power": 0,
+      "ram": 2,
+      "artist": "ADIA",
+      "print_number": "α001",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "eae3fb96-aed6-4569-be40-d16150d8e1fe",
+      "external_id": "cyberpunk:ruthless-lowlife",
+      "name": "Ruthless Lowlife",
+      "subname": null,
+      "display_name": "Ruthless Lowlife",
+      "slug": "ruthless-lowlife",
+      "rules_text": "When a rival steals one or more friendly gigs, if this unit is spent, the value of those gigs becomes 1.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a008.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=rasYpYPiOj~P-Wzi8G0qvhbhL6WmMqJGdFX-ktNPRNVKFUtqgzsz3yEDOJA8ibb8Ywk0HSsvnKXQS~36Eh9NvmbM~IaHzMRf7JZv8eU7aB68MoaA4b6qZyBVX-vZpX7QQ~lmcj~iHyqFdvZ3wru54fh6OlZJDIPirXyM2wvY-gkR0H3c-YJL9EF5kNleMUh92gnhnR55cR~APvo~ZMqTan3rCynIJgnd8OQKRzyORmeoGLBfDvdfSj4I2G7Ij9iKiejcouuUcd4uRlk4tQ8uvIir84-wLJCYPbRAHRUwxQO-ZU-hGxESwmqcCVk33rVsrTfn1wooxQCQilQfYAGKQA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a008.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": 1,
+      "ram": 1,
+      "artist": "Jeffrey Alan Love",
+      "print_number": "α008",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "cd144f92-a06d-4223-b014-bf81aa4a4ea0",
+      "external_id": "cyberpunk:swordwise-huscle",
+      "name": "Swordwise Huscle",
+      "subname": null,
+      "display_name": "Swordwise Huscle",
+      "slug": "swordwise-huscle",
+      "rules_text": null,
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a009.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=oN04cmAoNPktNTFHEgp7iu48Er6006jECrzZ8s8u7lPUtv5tmv-FHTcO3Xv0w3rdOxsDXj3ed5jLzJooUb6yzvxQlS~4gbJ6pHRDb-lgEBZ-VVttWTtS6ITqS4OEHKxW28fEg6DTNZHhG-gLFSAPzKMLHzPlYCxYp6-eYOvVXgie3iNbECrkTezHzVj00hj6i5L1ZMti3k0AXSdG1YoJEOHN-oNV5-hcZTsG1r6ibYGQgaj4IFveKrB9L0fnZkSe0J1gyQ5~PSdsGqU1ZYPDOLFX3AKCM3mY8OAzSZGY5kZGM9f~Mtud93CO~p3AmWxUTaozdzysR56K58SwmoR1Rg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a009.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": 3,
+      "power": 5,
+      "ram": 1,
+      "artist": "Olgierd Ciszak",
+      "print_number": "α009",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "52233c7f-5e0a-455d-b96b-b87af97bc473",
+      "external_id": "cyberpunk:kerry-eurodyne-the-last-rockerboy",
+      "name": "Kerry Eurodyne",
+      "subname": "The Last Rockerboy",
+      "display_name": "Kerry Eurodyne - The Last Rockerboy",
+      "slug": "kerry-eurodyne-the-last-rockerboy",
+      "rules_text": "[Spend Icon]: If you have a Gig at max value, draw 2 cards.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b067.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=rs9hntP9an-fkoMw7pPeuhnrwRzH-uzgVgWTOEeSJ8MzXc-Y5hGe6dZ5q-bGUVyCzv8nenIPJvtylgoBDAAlc~zMUFPF9MUo~9wrZYgWgXNuo-MDWLa0SZ2jwT9U-C7aw9eWIlG5niNkHT1BHlUJcQXrYoyQLoZm0jYSSr5wlwhBG5~03c7D7GbcxcXLkmYW8q~4ttiSacdxw1ZpEgP0MGuhkEGWgiKE3-xRU5kMihfxif3uNCosAM~jPs~Lk6m2CiPhiKsammrZa3XlIj3dhgl-Ha801uCNkx1TGZg5J-gwZcTcCpBT5MFPsaCsmH86fCcuaSoMWWJi~TK2jeqxfw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b067.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Rockerboy",
+        "Samurai"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 3,
+      "ram": 2,
+      "artist": "Bogna Gawrońska",
+      "print_number": "067",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "bd96d2fc-5c51-47a8-a428-09b13cfff35b",
+      "external_id": "cyberpunk:meredith-stout-stone-cold-corpo",
+      "name": "Meredith Stout",
+      "subname": "Stone Cold Corpo",
+      "display_name": "Meredith Stout - Stone Cold Corpo",
+      "slug": "meredith-stout-stone-cold-corpo",
+      "rules_text": "When a rival decreases the value of your friendly Gig, you may choose a card from your trash and add it to your hand.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b069.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=ZF-5TaTQQ~8A0teUmx7wmH77xPn1tgdsY4EBhOYwhvV74PZxpjVcxRnMg5Y9-tijvJqHCfUXTvRTIX3ENYyJ0NZdDLLhQcNuj3OeVNiOAVsh-OmvAYDMKz7mjvLYX0ZRE2e2i7rpnWtT~xO2qhiz7wco0-j83ufDh~CyQJfAP5q1VgpR02pKNS1YJrGP2dswB3mNkAH~Uehd1DSI9~fBtgQQY2g2n8hB5lkkfLYwzxt9qHzoXvFbxvBWQFRMmXzaxZhLX7r0E0trNMaXEb5HxgfX2-DHhmDRUp4eUdU66ITZS1bTJXqICYzIJmLIcs1MXkFvS0ozyeDuxrlUjLJlXA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b069.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Corpo",
+        "Militech"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 3,
+      "ram": 2,
+      "artist": "Daniel Valaisis",
+      "print_number": "069",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "3f52804a-9595-4115-a698-3b53f9b71227",
+      "external_id": "cyberpunk:armored-minotaur",
+      "name": "Armored Minotaur",
+      "subname": null,
+      "display_name": "Armored Minotaur",
+      "slug": "armored-minotaur",
+      "rules_text": "PLAY If you have 12+ * (Street Cred), defeat a rival unit with power 5 or less.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a007.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=AowMI-jbMFi0smhwfDdL5vXC9p50ZuwEWnxVX3X5bcLY9~WHYeO1~EyETQSmuTZ3VpQoehdFCt-0TsNrlJamTVFB5QuWLLBOh4ronl-O9Yxt3CSRgMoPErdMMZRjew-2HPRcLPM4mp9ELRe0SEbx7QppwujeRnAUUNIjjeOxb~7wbnHMTJc5TR5n-6L~M3j~iDI8nvhp9QIiV5-QEtHKSxP5NTBcwQ~uhaD2MmHSpCjD85hZun8YoCtdlxsWx1PPx-hzdOol1NqOGn80akKjh6Jq-vtOUTPwuySqElJkemCbmvmvFRD9Zk0~FEnkndQx15q0OSECPY9rceSbI56Kfw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a007.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Militech",
+        "Drone"
+      ],
+      "keywords": [
+        "Play"
+      ],
+      "cost": 6,
+      "power": 9,
+      "ram": 4,
+      "artist": "CD PROJEKT RED",
+      "print_number": "α007",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "40a0bf06-c63f-4989-ab66-268d8452a060",
+      "external_id": "cyberpunk:mantis-blades",
+      "name": "Mantis Blades",
+      "subname": null,
+      "display_name": "Mantis Blades",
+      "slug": "mantis-blades",
+      "rules_text": "(Equip to a unit or face-up legend.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a019.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=Z50VRCEXukmBEq-fq97eIyG6t60Wb~j48bZYfkpXtNrqSTyUz6vi0dHNTWprhvz7x3yH4p6hDRUpu6ZHZhQPlHzrPd-4tSZYGFAm0g8THD8QA5BlCDt09YlGg~Za1zItMuBBCcRP-J1V2Lyx9v~KDMeHpDBx6MXxDt7EY4YD9fTN4aH8qDSK3gWeNv8Nf6oeiGApLVr~bSNzfqy-sUkz1E0zU7uKMOPRrZ8UDYJpRxbJzADTRMPWWjyyTQevR~ZcAQxBvO~99RBEg4LrDxinSSSPAs66iYTD9MVQZFyTwPN18kYJFTfAy5c17SsXNUhD38-sTQA0bwd-d7hHsgEnvQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a019.webp",
+      "color": "Red",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Cyberware"
+      ],
+      "keywords": [],
+      "cost": 1,
+      "power": 2,
+      "ram": 1,
+      "artist": "Giada Marchisio, Kieran McKeown",
+      "print_number": "α019",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "07be92a9-d9c9-43f6-a497-4c0aa20c46d1",
+      "external_id": "cyberpunk:satori-sword-of-saburo",
+      "name": "Satori",
+      "subname": "Sword of Saburo",
+      "display_name": "Satori - Sword of Saburo",
+      "slug": "satori-sword-of-saburo",
+      "rules_text": "(Equip to a unit or face-up legend.) ATTACK If this unit wins a fight against a rival unit, draw a card.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a020.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=iYpOe5ExAAGaZLhmuohx9NY3YHlce-Kfx7Bk-4IE2epJrJkqhDclmajuZQqH~J~4sWgCUuLWA6VhtCBPEIMsVvheJ5jUtaXjShk6Ui1ceWgLDRuHOzYOPQbPVjsuYEpLo8KSnzkhmE471ZF-5J6LxiM99brgUrXiblYs41UMkB~eAX8T61kIrOsW~XyNxRTrR9fM1LTk1TFPF-RUwGgIXL78VLY3XnU95jgc91nD9YmPQTQUe3GRvbfjDTwWCifCoSszboEMZsU~cIugKA9zvrRx7vL3t-0eJI2HdaG59zIj5wF9jaOnVBEGOdxecObzo5LwgBlh~SlCaZPsUMqfig__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a020.webp",
+      "color": "Red",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Weapon",
+        "Arasaka"
+      ],
+      "keywords": [
+        "Attack"
+      ],
+      "cost": 2,
+      "power": 1,
+      "ram": 2,
+      "artist": "Ivan Shavrin",
+      "print_number": "α020",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "48f31579-a32b-4c58-923c-93a2aa3b780c",
+      "external_id": "cyberpunk:industrial-assembly",
+      "name": "Industrial Assembly",
+      "subname": null,
+      "display_name": "Industrial Assembly",
+      "slug": "industrial-assembly",
+      "rules_text": "Increase a friendly gig by 4. Then, if you have 7+ * (Street Cred), draw a card. (Discard programs after they resolve.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a021.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=ife-4wBpzRaK14vA9O5TiDAka01YG0XZZEpx~AwFeXhwIzkqAMYaIDiR-j39tbcqAXBIwP5prEdZt3mtAObdqW9CKZkdbc7X1DtolyLehD-3h07AHiqUYm0MJ1zAYNweLvehwgEEmqgUonUgxkY-lo9lAvHUMP2tGuxe3zyPsObOb3UmbSty1N2Lrd5CjlrRqBmwPJzwYJWmGSZ-uJgRbEqjL9OrD4AaWxB7y1MwWnwY76pRY8YT9TgdGiugXxFqLZcKYyO~3mvyR3suouiaw8C4z4PSoVjy30CFSe0qY7MvVKpAsaZRorQUA1VXhiP6TaAchVGysYsWoDSkZJAdcQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a021.webp",
+      "color": "Red",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [
+        "Plan",
+        "Arasaka"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": null,
+      "ram": 1,
+      "artist": "Alexander Dudar",
+      "print_number": "α021",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "15e5c60e-56c4-4a1a-a7cf-f208c5ffbee8",
+      "external_id": "cyberpunk:dum-dum-maelstrom-triggerman",
+      "name": "Dum Dum",
+      "subname": "Maelstrom Triggerman",
+      "display_name": "Dum Dum - Maelstrom Triggerman",
+      "slug": "dum-dum-maelstrom-triggerman",
+      "rules_text": "CALL You may defeat a friendly Gear. If you do, draw 4 cards. Otherwise, draw 1 card.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b133.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=M3nIZNSYT1e9ZU1EXD8S~6uotN6lYsEkQm~MnIvpqrSFLDoL4StrxLeqQqzSycO03O6ZzH-xFmd0zV4Ur-qotqP1F~Kj-qf6j~Kr2fExxi8jCKn~FNS6XU7EZo4yPmQNqEyXaoB3FKzEXozd~xz2XqLN90lDTavTEn7hQ6hauqyfsizzGK99J7OHyE1U-kgzmJXO4vfUF0v2DeZDCfcylf6LGxbOixQ5fFkOA36CpMGdfngF1wdGfnx8B9~fAWWc-3nQhhFJf67hcwyPqw73RUrgoQRJoIQ0dRI8iB~jdJzxdJdaOdld~RigTlSy--e133yVVXsoBKwJ01OPx60f2Q__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b133.webp",
+      "color": "Yellow",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Ganger",
+        "Maelstrom"
+      ],
+      "keywords": [
+        "Call"
+      ],
+      "cost": null,
+      "power": null,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "133",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "53886d23-5ec8-4d75-824f-9b02921e87dc",
+      "external_id": "cyberpunk:river-ward-detective-on-the-hunt",
+      "name": "River Ward",
+      "subname": "Detective on the Hunt",
+      "display_name": "River Ward - Detective on the Hunt",
+      "slug": "river-ward-detective-on-the-hunt",
+      "rules_text": "CALL Draw a card. When a Unit attacks, [Spend Icon]: Choose a Gear from your hand with cost 2 or less. Equip it for free to a friendly Yellow Unit with no equipped Gears.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b135.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=p5daRy~KpjPyio-X4JEZV7sbXCwubhCfQY095-IDo-lZ5tRv-X42y3AnkOWHpe3u5ei8F4tPVtpmrxB6BK-yGu3xf438FHOVM45s5gKNwMx9avLkmBZFL0jdS2QS~zz1k~9gdhCWafeQOvDInnJ88MPsXRe-9oP2Sm5Q0usXBG5HLZzLqxKUOIvOIKGdZ4HyEMl5Zz9xsg1ETZJTy~rEMAhRr1p7MYr0L~MLwmA5gdmXl-zpBYlgdIL0s01GcSQgyz7HIL4mmXXlNhkB6-H0T2ba9fmi8FqpMjUPYP6Cs9Uv4s-mskmIav3~kEHfNrZbzq-L8CHpxUXRaTWLdEREkg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b135.webp",
+      "color": "Yellow",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "NCPD"
+      ],
+      "keywords": [
+        "Call"
+      ],
+      "cost": null,
+      "power": null,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "135",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "d759e31e-12fd-4e44-92ad-7fd2535d43f5",
+      "external_id": "cyberpunk:viktor-vektor-sit-down-and-relax",
+      "name": "Viktor Vektor",
+      "subname": "Sit Down and Relax",
+      "display_name": "Viktor Vektor - Sit Down and Relax",
+      "slug": "viktor-vektor-sit-down-and-relax",
+      "rules_text": "FLIP Search the top 5 cards of your deck for up yo 2 gear that costs 2 or less each. Reveal them and add them to your hand. (Place the other cards on the bottom of your deck in a random order.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a006.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=lJxpB2qsoIFfGvwuRRaMhlxV~Nel~LeWzbCxrjUk9HkFSaa66pQce~FJmMMw7B3dZutFBKwzhdRDPa~bokJ9AZ4Keatb0VUFIVvqtvzwOebLF7JzBSz4OF3MNDX9NRKG52ok9OEl~P8ujGO8oOol1sjAAbl~SCdSTzIN2s26YdG5bHCPNSEljTkybHtPYMAQFTlYkAmYI49GxWVSixUaOCpYClbJNvbTg5DNJ2JXkqZiyVunAoeQ-bdJ5QEVys6E2A4TbyKBvYUQNi1OCrKYaSxXw42KZc3UKqckjNw99O8rUu0PPOtQJrgeMqTOP~Fhhi8C3OQnNAPrPCHZEGGv2g__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a006.webp",
+      "color": "Yellow",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Ripperdoc",
+        "Merc"
+      ],
+      "keywords": [
+        "Flip"
+      ],
+      "cost": null,
+      "power": 0,
+      "ram": 2,
+      "artist": "Envar",
+      "print_number": "α006",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "e89c8a35-8ecd-4fb2-88cc-8b2c5f204297",
+      "external_id": "cyberpunk:secondhand-bombus",
+      "name": "Secondhand Bombus",
+      "subname": null,
+      "display_name": "Secondhand Bombus",
+      "slug": "secondhand-bombus",
+      "rules_text": "This unit can't attack. BLOCKER (When a rival unit attacks, you may spend this unit to redirect the attack to it.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a014.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=OwazIpnSyqg568AfaZE3znvVtvZ2H5JBdoxwoMW1~2d8Jpq24kymeP2erHLJI1oeiI9830nKMYhgkKZGU2TFwIuglGwwAxfsbUTAiPajreHLJERh0ng~PWBZydNZWV1bKIU6ga32BT1KDX0lH8Fp2zJRPQRjLB58O6C1uJX17XZaJnAAsxBVbEdHtsDh9inHZfp-Z6JbB8ACjuiCeNbgxKNbb2urfxiagckQKz~SDBBofaVANndaHaJ2yKMN~xZfWytgSZ~Dp6r0vhIN0jGx-1WXuPLM78yOCiW4Ed7zt2daLpU~Fm04NHP8ve0LxV2YWQgfYzLdBAg1gzfThPgtVw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a014.webp",
+      "color": "Yellow",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Zetatech",
+        "Drone"
+      ],
+      "keywords": [
+        "Blocker"
+      ],
+      "cost": 2,
+      "power": 2,
+      "ram": 1,
+      "artist": "Luca Claretti",
+      "print_number": "α014",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "315450ca-6472-4bdc-a018-bb0a8f3e0467",
+      "external_id": "cyberpunk:hanako-arasaka-in-a-gilded-cage",
+      "name": "Hanako Arasaka",
+      "subname": "In A Gilded Cage",
+      "display_name": "Hanako Arasaka - In A Gilded Cage",
+      "slug": "hanako-arasaka-in-a-gilded-cage",
+      "rules_text": "PLAY Reveal the top 4 cards of your deck. Then choose a friendly Gig. Add all cards with cost equal to that Gig's value to your hand. Trash the rest.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b126.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=AqrDY9Tf4JS7ydGOW8cwwSOctc2rxsH8LHKilm7dk6Xv2LDv1dDLperizmYsol~1qAHLjMuEOdgTQQ0WcXdNxd526BmhCgAhK8b6AoHURJOrP5Pm8klg~FugnzHD8-GARL~SMPhicH-6DyyDPPNPuRdw6XVQ74QwW8pGv3I68on3cWX1DCfJO7Tt3qRIVe7Cpo8wCj7EzjFOanpYxfYxFDzbmWdJsLrVhOl3er6V1yX6RkyUju5azqmG1yGPcwdHf2K1P3vfli~RClckW7k3pcgK8pwo4Q9K14Q3azQ9QAGqjP5b4rBfaLYPQZs--L7wVajdSeObYK7hJG~eEk~L2Q__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b126.webp",
+      "color": "Yellow",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Corpo",
+        "Netrunner"
+      ],
+      "keywords": [
+        "Play"
+      ],
+      "cost": 3,
+      "power": 0,
+      "ram": 2,
+      "artist": "Akram",
+      "print_number": "126",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "07d0d80a-6a86-40b7-9dd5-8401700667ec",
+      "external_id": "cyberpunk:t-bug-amateur-philosopher",
+      "name": "T-Bug",
+      "subname": "Amateur Philosopher",
+      "display_name": "T-Bug - Amateur Philosopher",
+      "slug": "t-bug-amateur-philosopher",
+      "rules_text": null,
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a015.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=bEZb42OVbgFePkGIZd-ReC5hAFOHZPgTGhwVWBvKrEAwvGBOJSuoi3GmbGqTusPpc5aGoIBRn3luqP~K1BqS2lR2GBS33eZNLJqRjLhq9bJL~t6jem7RTl3oKKXUqkeXRJbClDakqxPCWclNndLylM0ft479OdX9TZ-U4keMFhPfFGuxXrcmvdpgejMZyRseme2t6gPs9oBrinhqlnbAJ0ibIezIRBO166rgmQ0bowRYd8qWg9G019xDpuk442XKvoWVY7Kr8rV1DYJZ6rSgLPhvxydDtHomejnn0wFW6Gpod0JjcmZt0c0V79WPjmZNBshPKnMDL7pay7StJaS6mQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a015.webp",
+      "color": "Yellow",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Netrunner",
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": 3,
+      "power": 5,
+      "ram": 1,
+      "artist": "CD PROJEKT RED",
+      "print_number": "α015",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "2aa9e8cf-e425-4ebf-97dd-85a21f5b4424",
+      "external_id": "cyberpunk:jackie-welles-ride-or-die-choom",
+      "name": "Jackie Welles",
+      "subname": "Ride Or Die Choom",
+      "display_name": "Jackie Welles - Ride Or Die Choom",
+      "slug": "jackie-welles-ride-or-die-choom",
+      "rules_text": "This unit has +2 power for each of your friendly gigs. (Units steal an extra gig for every 10 power.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a013.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=lTs4xyDK10MKhIGWuI1b3hTQecjQn7Q6Nj93v8d95LPHwoy~LSKnOoe3VUAfcvghZgZkOm8-Lt~i6JVeZ2-i5AbOsDkdwwuLxeyj1DAiisYfUMUqKVbqQuDZpy2J2tEC-jL4JqI-QM8jsqBQUET4RA6eUb0D0TG1d6QE9-nRft8ngClU3mH4SG-OxmBDG3-HFgnzC~gSk6sUE8NbGCTTGbD32qNgQO2FlFgVzLYOfK-cT2lMNW4iIbdCEf5k9s0hQFqWxMb2IeInul2mxMfV65yA82O8qCRYvIrjbp30o-7Baei8bzY7wVGaAXaq89UMNQnDmHsErEtmM6nhDIlrvg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a013.webp",
+      "color": "Yellow",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": 6,
+      "power": 6,
+      "ram": 3,
+      "artist": "Ilya Kuvshinov",
+      "print_number": "α013",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "ad8dee60-9812-4d00-95b6-a79a8dd632f3",
+      "external_id": "cyberpunk:adam-smasher-metal-over-meat",
+      "name": "Adam Smasher",
+      "subname": "Metal Over Meat",
+      "display_name": "Adam Smasher - Metal Over Meat",
+      "slug": "adam-smasher-metal-over-meat",
+      "rules_text": "PLAY Defeat all other Units.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b137.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=MCc33P30InmU3g46g~NAAe2Hf~XeLqUsuBs~RPlIzKvCKCJHbGfKWkr1mSvFk7nPeyOZ3-hmJWTCqsLxHJopAZKmZBst~DlUsyzeMLlpx1CCZGyd1zkjDcfFYNh8gy89LnYw86po-ddhdbIPs93IA0iBhBdcDp1tpx0kngyhel3Kw4tSsbL4NO~lU5czkEKYUCYnKn2RGaKWAsSQ70regf2W30U3WCTjMqaP36lQu9RCnP-rFDLTtydZMjYQ3-VSWx6Hrmj3mBPBtJjo8f4h776DWdM9UusfPq5OfPiAeHj8eQ-42mSYaylYl02AVeM4z1zIxIJpzzCArSTfYdLWhg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b137.webp",
+      "color": "Yellow",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Merc"
+      ],
+      "keywords": [
+        "Play"
+      ],
+      "cost": 9,
+      "power": 15,
+      "ram": 5,
+      "artist": "Łukasz Poller",
+      "print_number": "137",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "bf1deeaa-316b-4000-bbe5-ec7663c934c3",
+      "external_id": "cyberpunk:kiroshi-optics",
+      "name": "Kiroshi Optics",
+      "subname": null,
+      "display_name": "Kiroshi Optics",
+      "slug": "kiroshi-optics",
+      "rules_text": "(Equip to a unit or face-up legend.) ATTACK Look at a friendly face-down legend without revealing it.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a026.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=mxlYq8ERyk83hE-5QvlKwAlPJ4oSGssfzCbjttVNoxeG9IfP6kf2OSNIdfseCEt~CeDcc16pURtWHXoWTGOB33~Q0OKTTK3wIyuhXF8Fh35yeQGMSVCdFBFZd4JvbgM6XuZVpaJz-lpc3cG2mM618x4FMeyLaysDPLkOayTIto1LXo8SjN4jNNzIK3sYgZeLr7sS2m8K0cks6jTwBLM0oICnJRft8~C4YHAoqErHPB4JJCP-R68plJacLM6P-aHqOXJAtd-dKA~kLezz6JmNSzle1iTZx0fIJ5KprgzlQz3uggEZqYtXR1j534XxAYl8hz4UqeHY3zwJlaQChY76Jg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a026.webp",
+      "color": "Yellow",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Cyberware",
+        "Implant"
+      ],
+      "keywords": [
+        "Attack"
+      ],
+      "cost": 1,
+      "power": 1,
+      "ram": 1,
+      "artist": "CD PROJEKT RED",
+      "print_number": "α026",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "26f4e997-178c-4c1a-96f3-edde024f0081",
+      "external_id": "cyberpunk:mandibular-upgrade",
+      "name": "Mandibular Upgrade",
+      "subname": null,
+      "display_name": "Mandibular Upgrade",
+      "slug": "mandibular-upgrade",
+      "rules_text": "(Equip to a unit or face-up legend.) BLOCKER (When a rival unit attacks, you may spend this unit to redirect the attack to it.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a027.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=T2c2q7mswalOrCD3Itqcw9EQ-1BPvxU3OT0xCSxt6CO~rfdMCJIUhEImEDH25Md4MvMPUHcXdlHE3fmfrQut78B7dbVcIWpLBctrrjW8qKny84laSqZLr-YLhNzhWXdTdtIBz51w-nKJQHCTOEvQ45g~dPuKTrktqkAxjc5RR4I9yqtDdw0A~iqBnNcu4TtLNCiH5gf6TEb4F1T3p15-Ds21u0P7~916NHOwjebfd1MVz-OkVvwA1-MbpaVDMfQ7yzL1fPTXAMOPlfZtJOGhn5Z7vvmzNd6nLmEJAcBxS3cV2vxmCsQPjW4V0a3HXiOJ06xjEoUBuf8TXB3BfviZdQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a027.webp",
+      "color": "Yellow",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Cyberware",
+        "Implant"
+      ],
+      "keywords": [
+        "Blocker"
+      ],
+      "cost": 1,
+      "power": 0,
+      "ram": 2,
+      "artist": "Lea Leonowicz",
+      "print_number": "α027",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "500ae9b9-0afa-4b82-87ed-61c72583139c",
+      "external_id": "cyberpunk:gorilla-arms",
+      "name": "Gorilla Arms",
+      "subname": null,
+      "display_name": "Gorilla Arms",
+      "slug": "gorilla-arms",
+      "rules_text": "(Equip to a Unit or face-up Legend.) The first time this Unit steals a Gig each turn, you may steal a rival Gig with the same number of sides.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b111.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=nYF-aO8Kjqbeo8QH7duuXd0C2xGtfNe7SU~LQBu72f4CV1XoogYNC0WEM7hnMYLN7vM7cjcTEcEnCIuyotP6elRVr89lfQvMRh0NDDJlQiaAgFpN-SNGeJeB-FrrW8a34QxaKzgd3Xjf8Eej-00urGEXpTeekYoA50BUsvefGtEf~QCtyMfGd-r0jfFyWmKM5WO~vQdiZqS6cjLEdkJL2rQ3K3PJzOo1tLQ-0B4mPgMvPWz93a5uJrucQpN8fkxtU0bquF-vouHsDGRucDvpZpnHbokLzamRLTuE1uanOrgr5Pzv40enyy5fAckbPNLtWfuTZ-Cg6xh9h6eXTQ7pKw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b111.webp",
+      "color": "Yellow",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Cyberware"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 4,
+      "ram": 4,
+      "artist": "TOPDOG",
+      "print_number": "111",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "80681ab5-9420-4967-a9c8-d9fa0f3a0cd9",
+      "external_id": "cyberpunk:afterparty-at-lizzie-s",
+      "name": "Afterparty at Lizzie's",
+      "subname": null,
+      "display_name": "Afterparty at Lizzie's",
+      "slug": "afterparty-at-lizzie-s",
+      "rules_text": "Adjust a rival Gig by up to ±2. Then, if a friendly Gig has the same value, draw a card.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b116.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=UweOh7qNDwUyr4rtRmB~DpI~ePdg0DwSNWpN3X5YBuc4ynSFUa5hsOxJyiizpdtE4F374mzUV0Mxqfy~hri5q2jiV110m5giow4BxlDgr34IxctYEeAsWAGkeTQL6sPa8wo8RBexu1xCPZBP9JFW4bkkEWpCb2K05QA6Aj3yd-HFj4nLBVObHcAreFBdpuS7~~6eIvI62uBsz99YtgMKCs7QJxH-5m6nLMbwnievryIbiITL79EFvnKVy8uhFK3T9feHhlL4I7lzk6OOO5ex7as4txJPrK8erx8K3MElVH6Fi2OkBP2UK7xTGi8T~TGFKSuAlfSXtbGM8~0mPX4MfA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b116.webp",
+      "color": "Yellow",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [
+        "Braindance",
+        "Mox"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": null,
+      "ram": 2,
+      "artist": "Alicja Użarowska",
+      "print_number": "116",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "d0991502-57e5-42e2-b37b-64b425f4f1b5",
+      "external_id": "cyberpunk:cyberpsychosis",
+      "name": "Cyberpsychosis",
+      "subname": null,
+      "display_name": "Cyberpsychosis",
+      "slug": "cyberpsychosis",
+      "rules_text": "You may also play this Program when a Unit attacks by paying this card's cost and spending a friendly Unit or face-up Legend. Give an equipped Unit +2 power this turn for each of its equipped Gear. Defeat the Unit at the end of this turn.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b102.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=qsYqnsLdSko-eAZXXxTUAB0vAHOXHYDVatQOpDbWQMhwDq-iAZHiGfPZW6RBC-9AkfcyGPvP2~GCTi2X~4q5yNAAMp5M8YLpRix9P82vbkdyzhHaXZJyCkroQZsRTll6BM6GF2wUv4q0MuSP6uDa4WYUxnmuFm7y-CTAhuiAwU4EUG1B3hI6~kg-NDUNztVcMSug0N2OdOxFYuufExRR-G7nzdg9AIUFufOjKJxK7rZLFvdgN4~h4chr2iefvaxRMNCssbrboYg7bUJ5M~seuIXlzjxofyw6UxIib-gI95DPpS29lW9kxZDGdZFXsB4LwrIOhb52B55cg1~sftxMSw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b102.webp",
+      "color": "Yellow",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [
+        "Quickhack"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": null,
+      "ram": 3,
+      "artist": "Michal Ivan",
+      "print_number": "102",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "cc85bde3-16d0-4064-b5f0-35dbd855bfed",
+      "external_id": "cyberpunk:reboot-optics",
+      "name": "Reboot Optics",
+      "subname": null,
+      "display_name": "Reboot Optics",
+      "slug": "reboot-optics",
+      "rules_text": "Give a friendly unit +4 power this turn. Defeat it at the end of the turn. (Discard programs after they resolve.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a028.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=IKk3ziZaZkQmJuGMu4eDshJh8CoVOCAvpnakeQN9NbY1jNLVeqImtVKDW6Qj~1fvt1UuK6JlBab~9unN8JYFIGEVEzmQyhcGwAVlGwtgd7ZzY55M864ddpcTYAX9tt4kuVideph-i8Cm6EBiEnXTFa5ecHcrlND2UWde8oN75uQ7eo3i5iWRnBpNtuCerYj0dyk8~ZrNbESzStDvwgaf3cSZf3y6hXnen4TkYZLjAGty56Tjdag6Dyqtp5zFC-8n1OpCz-F35aoyGjkY9682vxo3HxjmqPR1QnQ7R3qaQl1QecIHMEE8U4OY0eKyDyOH6egnTh8r1b4VwIoQp4Xy7w__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a028.webp",
+      "color": "Yellow",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [
+        "Tech"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": null,
+      "ram": 2,
+      "artist": "Miguel Valderrama",
+      "print_number": "α028",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "d2254af5-7235-4691-8f90-69368df24361",
+      "external_id": "cyberpunk:goro-takemura-hands-unclean",
+      "name": "Goro Takemura",
+      "subname": "Hands Unclean",
+      "display_name": "Goro Takemura - Hands Unclean",
+      "slug": "goro-takemura-hands-unclean",
+      "rules_text": "GO SOLO (Pay this card's cost to play it as a ready unit. It can attack this turn.) BLOCKER (When a rival units attacks, you may spend this unit to redirect the attack to this unit.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a004.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=k3fb73vfwyNaxsDVdMS3Kt2ba6yrzKl95kYj3CPjkq-6YuoAhCVAt1Pa0RX69l2GgegUg8-B47xh7oISMKl4LAMMEY9n7YcbYvWxEsXRg3uCX81zy6h~kjr0xOiD-~Hn-In8E4wJGvZVNUWS-oA42lO~SLxAn6U9VqWRB26MaWQzBjE8Dr0d2J~ICZVyhZcQlNQVkmWa~aeowo1iZ2yu4wLbOwBK04BEJxwxMpHUtczdd9u0ZVFm7uBo-nO4Xx3eIasF99nchpBbyIxH9l7BWw84m3uXcph~Vt6bVnHUpnDiaTpXivcrkQE0csJvHXMbjBhKMkfFVx35uVe~vUOASw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a004.webp",
+      "color": "Green",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Arasaka",
+        "Corpo"
+      ],
+      "keywords": [
+        "Go Solo",
+        "Blocker"
+      ],
+      "cost": 5,
+      "power": 7,
+      "ram": 2,
+      "artist": "Bad Moon Studio",
+      "print_number": "α004",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "105ffd6a-8c13-4a30-bc54-da23045b26d1",
+      "external_id": "cyberpunk:goro-takemura-vengeful-bodyguard",
+      "name": "Goro Takemura",
+      "subname": "Vengeful Bodyguard",
+      "display_name": "Goro Takemura - Vengeful Bodyguard",
+      "slug": "goro-takemura-vengeful-bodyguard",
+      "rules_text": "CALL Ready this Legend. When a rival Unit attacks, [Spend Icon]: If you have a sided-pair of Gigs, give a friendly Unit with cost 4 or less +1 power and BLOCKER this turn.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b125.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=HBsXGnTlJW9XTIemHlEBzGk2hQykXIUuZzY0TZ0hjg~zXtysZyTWCkk1p-0Tac~clme8smftl69OdMYkUq52qlZ2fVrG4P75R1ORaNVuLw2g3TC0WNE8Y1MYQK3Dld4a8zcTexjQV07YQUeOeo9c3OGOndsri9LaxLEtHD-rHAcqkqlAnbl6QwwB1MnsZfByX55blVhFxI-DPKi~1LSM4nsm2I-HnXkzm4bJ4JdT9lCSCM9lNhMn3gbvtH3BX-RsE16-GbTFxqus9qY-4t885g6dfkmMuxoRxmdoYM0mW~ywzf2b9yT-oawx7-a~MK7iQr5YftESnxPKYD9HhAZELQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b125.webp",
+      "color": "Green",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Arasaka",
+        "Corpo"
+      ],
+      "keywords": [
+        "Call",
+        "Blocker"
+      ],
+      "cost": null,
+      "power": null,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "125",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "4132e38c-38f4-4958-85df-ba863caf43d5",
+      "external_id": "cyberpunk:panam-palmer-nomad-cavalry",
+      "name": "Panam Palmer",
+      "subname": "Nomad Cavalry",
+      "display_name": "Panam Palmer - Nomad Cavalry",
+      "slug": "panam-palmer-nomad-cavalry",
+      "rules_text": "CALL Ready this Legend. When a friendly Unit attacks, [Spend Icon]: Choose a Gear from this Legend and equip it to that Unit. If you do, ready that Unit.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b032.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=VSAYGEFw0qbKi~59XgVNNSa~TWFFGtrL~9PKWYdErQoIGDzxoWx2~~xuYOV19beojxsBJrzdsfwRdb-Nbo~hAAchNhbO7sGO7rh0N2Rcv9Gtjpat4Uh59NHFx7gqB4~kpjXAWuZ65qtzE2oZurdcu1siYlEKc-qOmZI9hZI9GxfirHUE3YOrlmCBApqQf1PHM4LRDbg8SaKFIMsjdFBnoLpj6uvtwaSHje6kkRYlwNL5EoyhSeeYSrZ9BABDlhrmaxfyKRzzJtTwBm3s-hnZRrfrwZ6SB2z8pFcU36bQB~X46fzmKahPMzdZkR9yHaaMfOP5-yNXtZ78LdFeFp~PYw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b032.webp",
+      "color": "Green",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Aldecado",
+        "Merc",
+        "Nomad"
+      ],
+      "keywords": [
+        "Call"
+      ],
+      "cost": null,
+      "power": null,
+      "ram": 2,
+      "artist": "Łukasz Poller",
+      "print_number": "032",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "4c2533bc-1891-419c-bb25-49423a417a9b",
+      "external_id": "cyberpunk:saburo-arasaka-stubborn-patriach",
+      "name": "Saburo Arasaka",
+      "subname": "Stubborn Patriach",
+      "display_name": "Saburo Arasaka - Stubborn Patriach",
+      "slug": "saburo-arasaka-stubborn-patriach",
+      "rules_text": "Your Arasaka units have +1 power when attacking. (Units steal an extra gig for every 10 power.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a005.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=A7xxQTl9YQie2C1zVUVf406Z~hrZ1rvQkS9kjdb4EJY9jYhfTf0y1Cp1b9GnDTazY1JWXHvbzrDhnV0Peyy9D1hf12IZxJV5mk5xlIWbs-SsJcLPNpeqjWZsfTLBazcu94mtiCcp2n3d3xSov4~YVxWkNUG3bpZLgIMZBiAo9zsCilTxsP3~UNJeWeTxrHUkQ~uQY9pduaOw5UTgvFONCsAqNkfRIwICSsTh0b0kL6kGsSFy3EPJWpAx9RSrRcM2XSbqHIgjZTVstOJ3GHLU7jLKICopTr9oeqPAa5tyCqY~5zkBlbS7LQ0RaOqW~rgzK68Q~skhStkFEFTRYOJhww__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a005.webp",
+      "color": "Green",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Arasaka",
+        "Corpo"
+      ],
+      "keywords": [],
+      "cost": null,
+      "power": 0,
+      "ram": 2,
+      "artist": "ADIA",
+      "print_number": "α005",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "b6652036-bbe2-407d-9c33-cce1147dbb7e",
+      "external_id": "cyberpunk:corpo-security",
+      "name": "Corpo Security",
+      "subname": null,
+      "display_name": "Corpo Security",
+      "slug": "corpo-security",
+      "rules_text": "This unit can't attack. BLOCKER (When a rival unit attacks, you may spend this unit to redirect the attack to it.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a016.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=ZbAk4IihXr-Y4NIah4UqrGZvpmICWCHvEuDQ8LS2y66G85XTiVrVgR4uSnzYcbtfmJ8W2B2qeJjGMb-V7AWr6Gp8dC2DtcgFLWIyraa-028LRIMJtG6ZN3510ASGcZmh5Pp6MdbApv4qep94nWJ0lwIJBUHqe-wBD~ijnfeD9VwL3XQVRmodNZQOFnEMLstEIdp7of8GD7MwJLoNWpg0ya2Srg9aifioI3wdSdkIvFNqfYBCoeZZOui4qRD0xoLlDFoLMND70Q-WbE5W~GYIfw1DRaaUU-75FVFyU9oyz0DvihJ0PGtJWQTyUag1lAMnGoLCvAPCvZLQYL4~UTuoEA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a016.webp",
+      "color": "Green",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Corpo"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": 2,
+      "ram": 2,
+      "artist": "Daniel Valaisis",
+      "print_number": "α016",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "b599ae78-4351-445d-accb-eec3c4d0c306",
+      "external_id": "cyberpunk:emergency-atlus",
+      "name": "Emergency Atlus",
+      "subname": null,
+      "display_name": "Emergency Atlus",
+      "slug": "emergency-atlus",
+      "rules_text": null,
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a017.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=WispM4Zih15IuQkpUDiI1X~EnK1hYOIA11OS-n6s~1C9SWrV0FDUJvNuG0W~YJHNiD77Eovh4AVccif9GTfoZAPyrBanlMBRiU1TiBTii1-lU1oDbmNlhTGtyHSdWSqkZVJGl9bwR3O129pqEORcyk5SfrLvE0c5xAGaIJ8sBktDUmQJ2Ac363ZCjbEtuKyFVREjkjqheJcVFyXAJWAVwgwjAzI3w-7m4QSO5TkmEYawXZiP0tcSgwDlwu487kCc6ZHCc8Bj8vThRh42L17JF16HqcLnLrG80fmwICZZ3MpYQ69JiTBGoWSIxL9bfEK5cM-A71c4OFXXxyQc9wefcA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a017.webp",
+      "color": "Green",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Vehicle",
+        "Corpo"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 7,
+      "ram": 3,
+      "artist": "Robert Sammelin",
+      "print_number": "α017",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "963f4fd2-9a58-4b50-96f9-d947d4105b56",
+      "external_id": "cyberpunk:goro-takemura-losing-his-way",
+      "name": "Goro Takemura",
+      "subname": "Losing His Way",
+      "display_name": "Goro Takemura - Losing His Way",
+      "slug": "goro-takemura-losing-his-way",
+      "rules_text": "This unit has +1 power during your turn for each face-up legend in your legends area.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a018.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=aKjldaM2kupu7oBvwF~rsS2W~X8gUGbCdWMaVdXCnKaXYJgk9aTWMyp5jN0iwgpTmqvOIg30~y3qROfF7Rk1Y63laM-zeZIoJo-USSEcCnGR98U8sF-vq0flePaYFwDKc~ssMUVimgsxuENXlrGH82Em3vUO8NguXXHfRDAZML0gyJqoIfTIOomN7nh9WL3pFOvTFCnjFHPrE37VfAZbXGNUecUg7REsySQo~LtmYd7C9KlV1-yvdo~T9Klpt6s5FwGKBKNb8cwYhksqsGS8N0NssMZge6L2W-61fDXUykbN1oA637lliPEYrmia2WJgkGAxTGkE2joKKNw~wkZQcg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a018.webp",
+      "color": "Green",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Arasaka",
+        "Corpo"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 5,
+      "ram": 3,
+      "artist": "Ilya Kuvshinov",
+      "print_number": "α018",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "20bcc767-29f0-4aa0-b842-4d4e546ed36e",
+      "external_id": "cyberpunk:riding-nomad",
+      "name": "Riding Nomad",
+      "subname": null,
+      "display_name": "Riding Nomad",
+      "slug": "riding-nomad",
+      "rules_text": "This Unit can attack spent rival Units the turn it's played.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b042.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=nx1uFRHHhyuFrIGZRHXT3AQbFM~ywshJeaYqjZzm5fS5hUVcpcO90DjuLNq4Amgc4EEsrydS6gry-1v8vm1X5gwFPIIzOJF6ti2DfBNff2uJpNoBpyTn-fczXO6X6WFI-fVFZqnEj2fN5U3u5w7wXNheY-UpTzgqbQwNSm36Brc18WPwxv74HWshFeKZyMRjKhDdYISn~ZQdH0hUEmnH~kiQ8yzmWA~9GhwV58X~FISfDp70hxz0PYyzaVzknfBut2G8h6HyHYjvEdSdesxYKwiA5zkEMjaRnQMltW-3Xs0kzf7U9Vey-Hl4HjuQ8~oWzX68nQ9cw2ULj42T9X4C5A__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b042.webp",
+      "color": "Green",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Nomad"
+      ],
+      "keywords": [],
+      "cost": 6,
+      "power": 6,
+      "ram": 3,
+      "artist": "Michal Ivan",
+      "print_number": "042",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "db4140f6-415c-4d67-b4a6-1ce28a0a8719",
+      "external_id": "cyberpunk:sandevistan",
+      "name": "Sandevistan",
+      "subname": null,
+      "display_name": "Sandevistan",
+      "slug": "sandevistan",
+      "rules_text": "(Equip to a unit or face-up legend.) PLAY This unit can attack spent units this turn.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a024.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=YOTDBD6Ed23NnqHFY-vMAIVzpPsFOKSbclRpXZDV~vIM8wHWg-qZh75eubGFStP1h8o~cWfp77zf92hPxE6N4TUCgTxIgOm41MCQxvha4OcASLEXMTD6y3-97JthYUf7~ZI0kaR8PPVETmKPcc4lRALcKbFu3VeTSHHAZnm-Re-iV80jXNqj204VHdkOItDENuyG72TGCKDLwx9JUK6a~MbgzmXlC2NwfcBpquvrpGUg9pT9ir-6R0U-g7RpupvKt85rdju0KuhmqL-Y1hqOqYDZclGjLOnMPAGF~oshyiMtJUiqaepcGVs4KfJtzpRjKKnVgqVlR~nTtjd6BN1Xdw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a024.webp",
+      "color": "Green",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Cyberware"
+      ],
+      "keywords": [
+        "Play"
+      ],
+      "cost": 3,
+      "power": 3,
+      "ram": 4,
+      "artist": "CD PROJEKT RED",
+      "print_number": "α024",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "959ba373-3be2-4643-b3c6-fecdd5e384ce",
+      "external_id": "cyberpunk:corporate-surveillance",
+      "name": "Corporate Surveillance",
+      "subname": null,
+      "display_name": "Corporate Surveillance",
+      "slug": "corporate-surveillance",
+      "rules_text": "Spend a rival unit with cost 3 or less. (Discard programs after they resolve.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a025.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=DLw8FYyOjVJi-ZP7Npg-YoxY~j37C-~VP3vm1muNt8cOf4SC2LSmAL-6tPq3IpV5wX72hovPkAgqb5KbTbL2zOTwStHWpmNL~khORekPy1qeW2uvRBo6k6uWeqpoclZl4PkilYCYZEaMhSwtjJJ0ccvMC6KPIcdqle9o3hdlZ86LAdo2mdD0o7SpUiEpGTZmcGB2H3pni5pj4bACrWr6FI92QapLPlo3RKIji7cUUCfIvmdNlzmxdA9vEXXjpWca5xVSKSlYdl6Q89o3E38pYu54DnLoUia2KQJEVCW1G9-nAJdlto10cdH53YScRZRsGLLbP3UZ8yW70uK26gXKOQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a025.webp",
+      "color": "Green",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [],
+      "keywords": [],
+      "cost": 2,
+      "power": null,
+      "ram": 2,
+      "artist": "John Liew",
+      "print_number": "α025",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "1c73efa6-4685-48e5-9064-11f31c8e6357",
+      "external_id": "cyberpunk:v-corporate-exile",
+      "name": "V",
+      "subname": "Corporate Exile",
+      "display_name": "V - Corporate Exile",
+      "slug": "v-corporate-exile",
+      "rules_text": "GO SOLO (Pay this card's cost to play it as a ready unit. It can attack this turn.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a003.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=OUnGF6PeFrAXYyfl~6NRJGdUWNKIdyCpYaQ-P9uzWJpB7DPJ4b8DLdygD31sc4WcBJlHYiL8aRktD~72NowDr89cXRda8rWyTJYpRiXpKX0H1I-RWama3~1UUOAvuZh0eq7QgrY5rHsWGn4HD0EGXzbeVn~~9AEV9PEqP1Kl0UzN~VATARgoSGAyp8Hspkt-5bT4zWxx~nC6HmKCR1Jz1mIfKs2tsPvU5QlbXKApxDZyPxEyZjtuv0tPp8dFBccJ18SirjqjTryv0ZPYfsLFzKW5qkx2ah8trZpgYpAn3pPzCVwsGxnKj3A3Q4QlxpRb9zLbIrgGe8Jn5cyEcW7rXw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a003.webp",
+      "color": "Blue",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Merc",
+        "Corpo"
+      ],
+      "keywords": [
+        "Go Solo"
+      ],
+      "cost": 5,
+      "power": 8,
+      "ram": 2,
+      "artist": "Envar",
+      "print_number": "α003",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "5bbc73e5-14c8-4817-8ffc-865dc0c6d068",
+      "external_id": "cyberpunk:alt-cunningham-soulkilller-architect",
+      "name": "Alt Cunningham",
+      "subname": "Soulkilller Architect",
+      "display_name": "Alt Cunningham - Soulkilller Architect",
+      "slug": "alt-cunningham-soulkilller-architect",
+      "rules_text": "GO SOLO When this Legend steals a Gig, you may remove this Legend from the game. If you do, choose a Program from your trash. Play it for free.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b121.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=H6Ko1w-I4XVorQmzv36SFkNVhtFKVuNK13U9-p62qtByPwQllZY5v2y3ya82uyPqG95Xwqx9rXFD4u6DVgD-s1LVHrKLt5k8rHL5LxStLoN7NdF1h~gl3FnbaYmC1LbErbaOewbaSi8daip3wdaf6X-eeLVtF0sxuGnYfpp2QFuMlEFI-6rZ-JY16otsYuHxpn6enbLQlIi1pgInVSA4~9rB7Ba4uPYzh9FsDZAIOw64xWF8FQ94zZrA6qV4R6v8izNj-7FAZfvxCGB5KX-IndWwkoFc1kCye35PIsdN5sreLEe7PrBxNPps8Rs~-3mSVfsBddbFoO3IQT5qVvqY6w__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b121.webp",
+      "color": "Blue",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Merc",
+        "Netrunner"
+      ],
+      "keywords": [
+        "Go Solo"
+      ],
+      "cost": 6,
+      "power": 4,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "121",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "1636c26f-189b-494d-96fc-6eb3df564d2f",
+      "external_id": "cyberpunk:evelyn-parker-beautiful-enigma",
+      "name": "Evelyn Parker",
+      "subname": "Beautiful Enigma",
+      "display_name": "Evelyn Parker - Beautiful Enigma",
+      "slug": "evelyn-parker-beautiful-enigma",
+      "rules_text": "CALL Decrease a rival Gig's value by 3. [Spend Icon]: Search the top 3 cards of your deck for up to 1 Braindance Program. Add it to your hand. Bottom-deck the rest.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b122.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=LZ5w-e87uHajb8clk45f4OnEa6jQ7P9kyH-6DaN8TeuvDWjG8v6rPdOfmR2uoydM8~~Vul8Ri87BwrA9Q6HSL9jC0FORObGLKToC8JuHUCzbKAVbfJQbB-hwbN700fTZNA8WgLdI6F9r5FvtNBD2FyQCQy26JhMQ1vRtMTbgNxKXR9AoFuNmg4BZqZJikOmMDSFCql8fyphsmyVuIhBbYkwMi-onRVzvOI-2iZBUsY5coNY4M6k9wVmuzm~Nzh3FjcJYttz0QseAgq2J9ZKqqMWzWdmxsPUpgu-oEcfMgb8UF8l66RjGvx4uGM-qYs~GWi9QkdfG94udlfGUH7ax3A__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b122.webp",
+      "color": "Blue",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Doll"
+      ],
+      "keywords": [
+        "Call"
+      ],
+      "cost": null,
+      "power": null,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "122",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "8ecb2fe3-9117-40be-9ffe-adbc5bbd2899",
+      "external_id": "cyberpunk:jackie-welles-pour-one-out-for-me",
+      "name": "Jackie Welles",
+      "subname": "Pour One Out For Me",
+      "display_name": "Jackie Welles - Pour One Out For Me",
+      "slug": "jackie-welles-pour-one-out-for-me",
+      "rules_text": "The first time you play a blue unit or blue gear each turn, you may increase a friendly gig by 2. Then, if it's at max value, draw a card.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a002.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=DX9e4z7ZTCGu05a0~sp9wDT44yckPqHEki2fXHKSHItDxDykILGroSNHYs00wdGLyoM-TeigdXzLeg1CId0kFlulOTGbAFwmPGtE4Qge9F1pjssxQkKNxFNbhBKQO2UP-RqpSXmWXBfa52csyXiFQjKKmsNFUta6ICEkfYGpdbly3p69fBCqNkP5Zp0DJMtHiRP9J2h5ogw3HosFWqEIeyGpHxR6CsD0U9OLXlQi3VlK-NsHsLk7REkM48L9l4YX8hjBG3SzOyjYZ9fOJ4V7lgnusCk0I44GNoX2UU6FN31xaGIYXlF05Gs1FGi7sPH5Rb-a9Qgu8gVk5nrOq6Laqg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a002.webp",
+      "color": "Blue",
+      "card_type": "Legend",
+      "is_eddiable": true,
+      "classifications": [
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": null,
+      "power": 0,
+      "ram": 2,
+      "artist": "Envar",
+      "print_number": "α002",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "3f2e5d58-dea3-4090-8fe7-0f5f4af2d333",
+      "external_id": "cyberpunk:lucyna-kushinada",
+      "name": "Lucyna Kushinada",
+      "subname": null,
+      "display_name": "Lucyna Kushinada",
+      "slug": "lucyna-kushinada",
+      "rules_text": null,
+      "flavor_text": null,
+      "set": {
+        "code": "promo",
+        "name": "Promo Cards"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/n001.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=sNYv-2Ox~qSJHQkap-BqFR2v-Y8sNG6lE-f5LqqLeZ3lN5KcjusANWn2czQvJDYumNwvV1HInE1IQEH8ElzJ3HJJHJNiTxyXCxNEONxrrr8RiE147M5ZI4g5fyz8cKjMjzkzyLRhIsP~1lTuS3YoBfGW0ZEIcp~J14207yfvtQ6n3Sk761vNxHTP0z-P4Ii6Oqmwmko0i5zgBCc3Do1XwpCBshcuSaGqrxT1GyeqO2gQF3itGw1h3QA-TLgh67MXcZnQALCSZphtoZE25fz7vqawwbGAX-L3V5Q7GOegipf0I5c2OCCUXfj6attojho2Bgkfewihmo~lqlgVK4~~6A__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/n001.webp",
+      "color": "Blue",
+      "card_type": "Legend",
+      "is_eddiable": false,
+      "classifications": [
+        "Overclocking"
+      ],
+      "keywords": [],
+      "cost": null,
+      "power": 0,
+      "ram": 2,
+      "artist": "Pandart Studio",
+      "print_number": "N001",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "ce9e2d5d-5bd4-4ff8-96a3-5767e9969357",
+      "external_id": "cyberpunk:evelyn-parker-scheming-siren",
+      "name": "Evelyn Parker",
+      "subname": "Scheming Siren",
+      "display_name": "Evelyn Parker - Scheming Siren",
+      "slug": "evelyn-parker-scheming-siren",
+      "rules_text": "When a rival steals one or more friendly gigs, if this unit is spent, draw a card.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a011.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=hoAPaZgtmZrVIN~Yfxlg4iB7-0y50OuplabPNgFMczYxsglAEfmJs1Q4DCjb7Px0FXFeTI5moXTd7FH0zKcEbr6N4NfaCjSc4EYqPT~60m9S3RQHtGjKFIRwSbiMWjZuAJlpNdCr8Mg2sAgwNRo0JpI3-Vgqg9-2jug~t3Fmseiz7ythV3aGQdBHatxRsMmnKUtHbEf8fDSfdfwoTdQ1VJDua609pdlhkD1fTKvyQL7UuZtTis7HTdIZWu8c3iy4RZGxu7yxgNNAzw2MxlzYFsaSUuqx6SH-4HPNKrHzIDnuedp88L2BMu0pjAdJJvL8JAU0Lhj4v9ipoN6Oil7Htw__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a011.webp",
+      "color": "Blue",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Doll"
+      ],
+      "keywords": [],
+      "cost": 2,
+      "power": 1,
+      "ram": 1,
+      "artist": "Olgierd Ciszak",
+      "print_number": "α011",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "5dba6f6d-b7da-46a7-946d-670bdfb1fe6f",
+      "external_id": "cyberpunk:delamain-cab",
+      "name": "Delamain Cab",
+      "subname": null,
+      "display_name": "Delamain Cab",
+      "slug": "delamain-cab",
+      "rules_text": null,
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a010.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=CYAvspNsBmjlm-qVQhJCPTp5eUsrjdEGf3Qs7iTQEr3tuxuQwiBaV3UJlreJqnqQyRNF0DuSnjOQdjLtFexupbvgTsX5qbQsyOD1rNGfGCCM7IYIa6XmqxJy5CUlsWSqsjSqdIg3HwIJ9SB98SQuZxsXyObflHVHzX1f4XTp9zdJL2JXv27sABobHGeH7f7nrtfZjV2gxtGSGrf~K4WaGV-GO9tarpClDExPkFn1UU0d6PbpeGiZ0qRRoFOrd1s5WTyG1IECtpZNHHPFqDqIamoHbiZZy6tmJ-TDiKfqQmx1A9KdW~tgc5bD3SwSCSvHZqsrNhm1Bwe6~LhzqU4Xeg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a010.webp",
+      "color": "Blue",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Vehicle"
+      ],
+      "keywords": [],
+      "cost": 4,
+      "power": 7,
+      "ram": 3,
+      "artist": "Daniel Valaisis",
+      "print_number": "α010",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "0a77db39-d894-4df5-815a-40ffeb01fa27",
+      "external_id": "cyberpunk:mt0d12-flathead",
+      "name": "MT0D12 Flathead",
+      "subname": null,
+      "display_name": "MT0D12 Flathead",
+      "slug": "mt0d12-flathead",
+      "rules_text": "If you have 7+ * (Street Cred), this unit can't be blocked.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a012.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=VrrdLeKcnMAsH2rXFaZ7HNfx3VT2MUbFTIeNV7EIuT~8uGZLqa1kVhhrriRlMpHZvmESRbTetzXz-vOH5b6dplfxdCayfeaMiwXFvQPrrlFQ7YtzGvhJA-Vzxx3TwjjAIdEu56dzC1EvablqAnfarLG9vETUYr-psQ0yo2OxDngKF9YENn2GUnqiyIY326~1QK2ViowLe84BPV1evzjKC4l69IfzhFdpluxbeqtXUghfnOKu6PUCqnfv7K0lfTuqTvahbwfO4CMe5vJRvF0PymDkHN9Uu9QMBmkMdTL-Jpy4asjZMd9gvI2~HLD0DBkTdmyIf~DM4WfqIKsDfs5Xsg__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a012.webp",
+      "color": "Blue",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Militech",
+        "Drone"
+      ],
+      "keywords": [],
+      "cost": 5,
+      "power": 5,
+      "ram": 3,
+      "artist": "Frederico Sabbatini",
+      "print_number": "α012",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "7cd71a63-f430-4e26-884c-3956f929dfef",
+      "external_id": "cyberpunk:placide-voodoo-sentinel",
+      "name": "Placide",
+      "subname": "Voodoo Sentinel",
+      "display_name": "Placide - Voodoo Sentinel",
+      "slug": "placide-voodoo-sentinel",
+      "rules_text": "PLAY ATTACK You may discard a Program from your hand. If you do, bottom-deck a rival Unit.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b073.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=U9qfJFkZ72v-BVDXR1AOwj0lSOxPfUsCRxcsfOcD7yzA3tLQcbvDq6FZ95Ny~BXkmE20PJJvmkXC-khP8kxH-luMk1kgFX7CygsljV62-TxLqLGvwHjAApEjfa-4sZfWYSx37qRYWxUduWVsefLVseVoslsDvpUoVncPAS3MjIg0lfoDTrIgtwnM0XlYv4UtWfK-VptWuPOAAt5qeFFfQoEMiBKqvvjRwSIP3eQTburN18pY2EmZfU5Rtt91CR1BgctFAybnolBvhdKRt3MPW84XIg2-ZOu9cUvPKSuFvazLVBgDpw-qUgcrLatp3cZyaS9E4g5mjZQp03eQ1qP6aQ__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b073.webp",
+      "color": "Blue",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Ganger",
+        "Netrunner",
+        "Voodoo Boys"
+      ],
+      "keywords": [
+        "Play",
+        "Attack"
+      ],
+      "cost": 8,
+      "power": 10,
+      "ram": 2,
+      "artist": "Mooncolony",
+      "print_number": "073",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "fe99da63-8c6b-412b-b4e6-e24ce0de34c1",
+      "external_id": "cyberpunk:dying-night-v-s-pistol",
+      "name": "Dying Night",
+      "subname": "V's Pistol",
+      "display_name": "Dying Night - V's Pistol",
+      "slug": "dying-night-v-s-pistol",
+      "rules_text": "(Equip to a unit or face-up legend.) ATTACK If you have 7+ * (Street Cred), defeat a rival gear card that costs 2 or less.",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a022.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=UNYbhg8jwZHKN3ZKVmQYAylXafYqXFFOutE8N1kARKNIkKnugwG0RHErc0he0M-2MIz4ZQx86xq2nrSmU-QloSEcwa0kHfR4DIzzUpJCv8apQQemKXD5EHXmxrF~YkbLkg12hjc1x0LFF2J3NK0jPN71xvEUg1SlolVR3fRMpF1bnUReK2w7WfBMV0CpOPJhoXnv4purjzPvcyUpx4AdyewW898tpxDy-y1mLxRyig~chVrOUMJdjt20B2Bnau01oN7R6C~bKzJEazPDahNZvFcEetzu-~tkyt-4Y1-Izt~a~BZBP4M-6X6MbjEHFYsc1WkJhTY53Dy7nBIFKayBTA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a022.webp",
+      "color": "Blue",
+      "card_type": "Gear",
+      "is_eddiable": true,
+      "classifications": [
+        "Weapon",
+        "Merc"
+      ],
+      "keywords": [
+        "Attack"
+      ],
+      "cost": 2,
+      "power": 2,
+      "ram": 3,
+      "artist": "Ivan Shavrin",
+      "print_number": "α022",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
+      "id": "ae8a7ca4-9682-4b52-aa00-2dcd4f2afecd",
+      "external_id": "cyberpunk:floor-it",
+      "name": "Floor It",
+      "subname": null,
+      "display_name": "Floor It",
+      "slug": "floor-it",
+      "rules_text": "Return a spent unit with cost 4 or less to its owner's hand. (Discard programs after they resolve.)",
+      "flavor_text": null,
+      "set": {
+        "code": "alpha",
+        "name": "Alpha Kit Set"
+      },
+      "rarity": null,
+      "image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a023.webp?Expires=1774889279&Key-Pair-Id=K3SGRHESIHQPEW&Signature=KydZ2izjJdaINBKVpJed5tVRcabogMKYfg8hOCqJdIQcNPcX4YXO2qHwx84rxaZgAQVrx2HGx1-QtNspkIUqwMPX4XiNMf65unbmkWHYzHeKfo7EVHg5NDRiru6E3sA9IVjWz5-ab6PYLqsqnZo~4dBX6cddHZYuRI1QntKwlJPGShWuaYGwEakIexQMFHK5Xtj4n7dEgKaV7GItAfV6UMbSwyVZM4qDT6ibfWVOfzE75td6WFMUyw4kN-5Qm4v6-cpK0Njn9b-ZLzImlIftDRcJXL7oHt-DyOE5oY6fBmCyJtJOwhsxSJojZEcwqX3RwpRmm3n92r2DBeygG~c7mA__",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/a023.webp",
+      "color": "Blue",
+      "card_type": "Program",
+      "is_eddiable": true,
+      "classifications": [
+        "Plan",
+        "Merc"
+      ],
+      "keywords": [],
+      "cost": 3,
+      "power": null,
+      "ram": 2,
+      "artist": "DOFRESH",
+      "print_number": "α023",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    }
+  ],
+  "total": 46,
+  "limit": 100,
+  "offset": 0
+}
