@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "prebuild": "tsx scripts/fetch-cards.ts",
-    "dev": "next dev --turbopack",
+    "dev": "next dev --webpack",
     "build": "next build",
     "export": "next export",
     "start": "next start",

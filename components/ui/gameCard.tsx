@@ -19,7 +19,7 @@ export function GameCard({
 export function CardList({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
-      className={cn("flex flex-wrap justify-center gap-4", className)}
+      className={cn("flex flex-wrap justify-center gap-4 py-10", className)}
       {...props}
     />
   )
