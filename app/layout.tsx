@@ -4,21 +4,15 @@ import "@total-typescript/ts-reset"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/sonner"
-import { Deck } from "@/components/ui/deck/deck"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { Separator } from "@/components/ui/separator"
-import React from "react"
 
 const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-mono",
 })
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
@@ -26,9 +20,7 @@ export default function RootLayout({
       className={cn("antialiased", "font-mono font-bold", orbitron.variable)}
     >
       <body suppressHydrationWarning className="flex min-h-screen flex-col">
-        <TooltipProvider>
-          {children}
-        </TooltipProvider>
+        <TooltipProvider>{children}</TooltipProvider>
         <Toaster />
         <Separator />
         <footer className="p-10 pb-20 text-center text-primary md:pb-10">
