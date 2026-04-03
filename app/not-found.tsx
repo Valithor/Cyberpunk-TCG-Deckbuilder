@@ -1,4 +1,4 @@
-import { Metadata } from "next"
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Page not found",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Page not found",
     description: "The requested page could not be found.",
   },
-}
+};
 
 export default function NotFound() {
   return (
@@ -31,5 +31,5 @@ export default function NotFound() {
         <div>Page not found</div>
       </h1>
     </div>
-  )
+  );
 }

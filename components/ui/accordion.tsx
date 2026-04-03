@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Accordion as AccordionPrimitive } from "radix-ui"
+import * as React from "react";
+import { Accordion as AccordionPrimitive } from "radix-ui";
 
-import { cn } from "@/lib/utils"
-import { CaretDownIcon, CaretUpIcon } from "@phosphor-icons/react"
+import { cn } from "@/lib/utils";
+import { CaretDownIcon, CaretUpIcon } from "@phosphor-icons/react";
 
 function Accordion({
   className,
@@ -16,7 +16,7 @@ function Accordion({
       className={cn("flex w-full flex-col", className)}
       {...props}
     />
-  )
+  );
 }
 
 function AccordionItem({
@@ -29,7 +29,7 @@ function AccordionItem({
       className={cn("not-last:border-b", className)}
       {...props}
     ></AccordionPrimitive.Item>
-  )
+  );
 }
 
 function AccordionTrigger({
@@ -60,7 +60,7 @@ function AccordionTrigger({
         </AccordionPrimitive.Trigger>
       </h2>
     </AccordionPrimitive.Header>
-  )
+  );
 }
 
 function AccordionContent({
@@ -83,7 +83,7 @@ function AccordionContent({
         {children}
       </div>
     </AccordionPrimitive.Content>
-  )
+  );
 }
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };

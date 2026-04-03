@@ -1,16 +1,16 @@
-import { Orbitron } from "next/font/google"
-import "@total-typescript/ts-reset"
+import { Orbitron } from "next/font/google";
+import "@total-typescript/ts-reset";
 
-import "./globals.css"
-import { cn } from "@/lib/utils"
-import { Toaster } from "@/components/ui/sonner"
-import { TooltipProvider } from "@/components/ui/tooltip"
-import { Separator } from "@/components/ui/separator"
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Separator } from "@/components/ui/separator";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-mono",
-})
+});
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -33,5 +33,5 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </footer>
       </body>
     </html>
-  )
+  );
 }

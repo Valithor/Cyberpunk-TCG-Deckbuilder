@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   CompatibleCards,
   CompatibleLegends,
@@ -9,21 +9,21 @@ import {
   HeadingCards,
   HeadingLegends,
   LoadDeck,
-} from "@/components/ui/deck/deck"
+} from "@/components/ui/deck/deck";
 import {
   Drawer,
   DrawerContent,
   DrawerDescription,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-import { CardList } from "@/components/ui/gameCard"
-import { Separator } from "@/components/ui/separator"
-import { StackIcon } from "@phosphor-icons/react/dist/ssr"
-import { AccessibleIcon } from "@radix-ui/react-accessible-icon"
+} from "@/components/ui/drawer";
+import { CardList } from "@/components/ui/gameCard";
+import { Separator } from "@/components/ui/separator";
+import { StackIcon } from "@phosphor-icons/react/dist/ssr";
+import { AccessibleIcon } from "@radix-ui/react-accessible-icon";
 
-import type { Metadata } from "next"
-import React from "react"
+import type { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   title: {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
 
   category: "games",
-}
+};
 
 export default async function Page() {
   return (
@@ -147,5 +147,5 @@ export default async function Page() {
         <LoadDeck />
       </React.Suspense>
     </Deck>
-  )
+  );
 }
