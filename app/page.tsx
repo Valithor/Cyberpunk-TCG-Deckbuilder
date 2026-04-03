@@ -132,14 +132,14 @@ export default async function Page() {
               </Badge>
             </Button>
           </DrawerTrigger>
-          <DrawerContent className="overflow-auto p-4">
+          <DrawerContent className=" p-4">
             <DrawerTitle className="sr-only">Deck</DrawerTitle>
             <DrawerDescription className="sr-only">
               Here you can preview and share your deck. Clicking on a card will
               remove it from the deck. In order to add new cards close this
               modal and click on cards on the previous view.
             </DrawerDescription>
-            <DeckPreview className="w-full" />
+            <DeckPreview className="w-full overflow-auto" />
           </DrawerContent>
         </Drawer>
       </main>
