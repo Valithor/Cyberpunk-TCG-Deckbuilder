@@ -27,7 +27,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning className="flex min-h-screen flex-col">
         <TooltipProvider>
-          <Deck>{children}</Deck>
+          {children}
         </TooltipProvider>
         <Toaster />
         <Separator />
