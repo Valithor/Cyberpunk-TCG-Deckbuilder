@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valithor.github.io/Cyberpunk-TCG-Deckbuilder/sitemap.xml

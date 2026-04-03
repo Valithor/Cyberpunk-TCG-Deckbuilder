@@ -1,19 +1,46 @@
 "use client"
 
-import { cardsDb } from "@/api/cards-db"
+import { cardsDb, DEFAULT_RAM } from "@/api/cards-db"
 import { CardColor, CardT } from "@/lib/api"
 import { cn, sum } from "@/lib/utils"
 import React from "react"
 import { toast } from "sonner"
-import { GameCard } from "../gameCard"
-import { WarningIcon, QuestionIcon } from "@phosphor-icons/react"
-import { Tooltip, TooltipContent, TooltipTrigger } from "../tooltip"
-import { Progress } from "../progress"
+import { GameCard } from "@/components/ui/gameCard"
+import { WarningIcon, QuestionIcon, StackIcon } from "@phosphor-icons/react"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+import { Progress } from "@/components/ui/progress"
 import { AccessibleIcon } from "@radix-ui/react-accessible-icon"
-import { Button } from "../button"
-interface DeckT {
+import { Button } from "@/components/ui/button"
+import { useSearchParams } from "next/navigation"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "../input"
+
+export function DeckIcon() {
+  return <StackIcon className="size-6" />
+}
+
+type MaxRam = Record<CardColor, number>
+
+interface DeckMinT {
   legends: Array<string>
   cards: Array<{ id: string; count: number }>
+}
+interface DeckT {
+  legends: Array<CardT>
+  cards: Array<{ card: CardT; count: number }>
+  ram: MaxRam
+  total: number
 }
 
 const DeckContext = React.createContext<DeckT | null>(null)
@@ -25,7 +52,8 @@ function useDeck() {
 }
 
 interface DeckDispatchContext {
-  dispatch: React.ActionDispatch<DeckActionPayload>
+  handleAddCard: (card: CardT) => void
+  handleRemoveCard: (card: CardT) => void
 }
 
 const DeckDispatchContext = React.createContext<DeckDispatchContext | null>(
@@ -49,31 +77,53 @@ interface DeckActionRemoveCard {
 
 type DeckActionPayload = [DeckActionAddCard | DeckActionRemoveCard]
 
-function validateDeckLegend(deck: DeckT) {
-  if (deck.legends.length !== 3) return "Deck must include exactly 3 legends."
-  return true
+const getCardNames = (cards: CardT[]) => cards.map((c) => c.name)
+
+function useLegendRules() {
+  const deck = useDeck()
+  const rules = []
+  if (deck.legends.length !== 3)
+    rules.push("Deck must include exactly 3 legends.")
+
+  const cardNames = getCardNames(deck.legends)
+  if (cardNames.length !== new Set(cardNames).size)
+    rules.push("All legends need to have unique names.")
+  return [!!rules.length, rules] as const
 }
+function useCardRules() {
+  const deck = useDeck()
+  const rules = []
+  const count = countCards(deck.cards)
+  if (count < 40 || count > 50) rules.push("Deck must consist of 40-50 cards.")
+  if (deck.cards.some((c) => c.count > 3))
+    rules.push("Some cards exceed limit 3 copies limit.")
+  if (deck.cards.some((c) => !validateRam(c.card, deck.ram)))
+    rules.push("Some cards exceed ram limit.")
+  return [!!rules.length, rules] as const
+}
+const validateRam = (card: CardT, maxRam: MaxRam) =>
+  maxRam[card.color] >= card.ram
 
 function validateNewLegend(deck: DeckT, card: CardT, isNew = true) {
-  if (isNew && deck.legends.includes(card.id))
-    return "Deck can't have multiple copies of the same legend."
+  if (isNew && deck.legends.some((l) => l.name === card.name))
+    return "All legends need to have unique names."
   if (deck.legends.length >= 3) return "Deck can't have more than 3 legends."
   return true
 }
 
-function countCards(deck: DeckT) {
-  return sum(deck.cards.map((c) => c.count))
+function countCards(cards: DeckT["cards"]) {
+  return sum(cards.map((c) => c.count))
 }
 
 function validateNewCard(deck: DeckT, card: CardT, isNew = true) {
-  //min 40 cards
   if (isNew) {
-    if (countCards(deck) >= 50) return "Deck can't have more than 50 cards."
+    if (countCards(deck.cards) >= 50)
+      return "Deck can't have more than 50 cards."
   }
-  const ramMax = cardsDb.calculateRam(deck.legends)[card.color]
-  if (card.ram > cardsDb.calculateRam(deck.legends)[card.color])
+  const ramMax = deck.ram[card.color]
+  if (card.ram > ramMax)
     return `This card exceeds max current ram level. Current ram level for ${card.color} is ${ramMax}.`
-  const exists = deck.cards.find((c) => c.id === card.id)
+  const exists = deck.cards.find((c) => c.card.id === card.id)
   if (exists && exists.count >= (isNew ? 3 : 4))
     return "You can't include more than 3 copies of the same card."
   return true
@@ -83,30 +133,20 @@ function isError(validationReturn: true | string) {
   return typeof validationReturn === "string"
 }
 
+const isLegend = (card: CardT) => card.card_type === "Legend"
+
 export function Deck({ children }: React.ComponentProps<"div">) {
+  const searchParams = useSearchParams()
   const [error, setError] = React.useState<{ message: string }>()
-  const [deck, dispatch] = React.useReducer<DeckT, DeckActionPayload>(
+  const [deckIds, dispatch] = React.useReducer<DeckMinT, DeckActionPayload>(
     (state, action) => {
       switch (action.type) {
         case "ADD_CARD": {
-          if (
-            action.value.card_type === "Legend" &&
-            validateNewLegend(state, action.value)
-          ) {
-            const message = validateNewLegend(state, action.value)
-            if (isError(message)) {
-              setError({ message })
-              return state
-            }
+          if (isLegend(action.value)) {
             return {
               ...state,
               legends: [...state.legends, action.value.id],
             }
-          }
-          const message = validateNewCard(state, action.value)
-          if (isError(message)) {
-            setError({ message })
-            return state
           }
           const existingIndex = state.cards.findIndex(
             (c) => c.id === action.value.id
@@ -131,10 +171,7 @@ export function Deck({ children }: React.ComponentProps<"div">) {
           }
         }
         case "REMOVE_CARD": {
-          if (
-            action.value.card_type === "Legend" &&
-            validateNewLegend(state, action.value)
-          ) {
+          if (isLegend(action.value)) {
             return {
               ...state,
               legends: state.legends.filter((l) => l !== action.value.id),
@@ -161,14 +198,60 @@ export function Deck({ children }: React.ComponentProps<"div">) {
         }
       }
     },
-    { cards: [], legends: [] }
+    {
+      cards: cardsFromSearchParams(searchParams) ?? [],
+      legends: legendsFromSearchParams(searchParams) ?? [],
+    }
   )
   React.useEffect(() => {
     if (error) toast(error.message)
   }, [error])
+
+  const deck: DeckT = React.useMemo(() => {
+    const legends = cardsDb.getByIds(deckIds.legends)
+    const cards = deckIds.cards
+      .map((c) => {
+        const card = cardsDb.getById(c.id)
+        if (!card) return null
+        return { count: c.count, card }
+      })
+      .filter(Boolean)
+    return {
+      legends,
+      cards,
+      ram: legends
+        .filter((c) => isLegend(c))
+        .reduce(
+          (p, { color, ram }) => ({ ...p, [color]: p[color] + ram }),
+          DEFAULT_RAM
+        ),
+      total: countCards(cards),
+    }
+  }, [deckIds])
+
+  const handleAddCard = React.useCallback(
+    (card: CardT) => {
+      const message = isLegend(card)
+        ? validateNewLegend(deck, card)
+        : validateNewCard(deck, card)
+      if (isError(message)) {
+        setError({ message })
+        return
+      }
+      dispatch({ type: "ADD_CARD", value: card })
+    },
+    [deck]
+  )
+  const handleRemoveCard = React.useCallback(
+    (card: CardT) => {
+      dispatch({ type: "REMOVE_CARD", value: card })
+    },
+    [deck]
+  )
+
   return (
     <DeckContext.Provider value={deck}>
-      <DeckDispatchContext.Provider value={{ dispatch }}>
+      <DeckDispatchContext.Provider value={{ handleAddCard, handleRemoveCard }}>
         {children}
       </DeckDispatchContext.Provider>
     </DeckContext.Provider>
@@ -179,30 +262,42 @@ export function AddToDeckButton({
   card,
   ...props
 }: React.ComponentProps<"button"> & { card: CardT }) {
-  const { dispatch } = useDeckDispatch()
-  const addCardAction = React.useCallback(() => {
-    dispatch({ type: "ADD_CARD", value: card })
-  }, [dispatch])
+  const { handleAddCard } = useDeckDispatch()
+  const addCardAction = React.useCallback(
+    () => handleAddCard(card),
+    [handleAddCard]
+  )
   return (
     <button
       {...props}
+      aria-label="Add card"
       className="max-w-40 cursor-pointer bg-background transition-all hover:scale-105 hover:opacity-80 active:translate-y-[1px] active:scale-95 md:max-w-80"
       onClick={addCardAction}
     />
   )
 }
+
+const cardColor: Record<CardColor, string> = {
+  Red: "border-red-500",
+  Yellow: "border-yellow-500",
+  Green: "border-green-500",
+  Blue: "border-blue-500",
+}
+
 export function RemoveFromDeckButton({
   card,
   className,
   ...props
 }: React.ComponentProps<"button"> & { card: CardT }) {
-  const { dispatch } = useDeckDispatch()
-  const addCardAction = React.useCallback(() => {
-    dispatch({ type: "REMOVE_CARD", value: card })
-  }, [dispatch])
+  const { handleRemoveCard } = useDeckDispatch()
+  const addCardAction = React.useCallback(
+    () => handleRemoveCard(card),
+    [handleRemoveCard]
+  )
   return (
     <button
       {...props}
+      aria-label="Remove card"
       className={cn(
         "h-10 cursor-pointer overflow-hidden border transition-all hover:scale-105 hover:opacity-80 active:translate-y-[1px] active:scale-95",
         cardColor[card.color],
@@ -213,25 +308,104 @@ export function RemoveFromDeckButton({
   )
 }
 
-const cardColor: Record<CardColor, string> = {
+const ramStyles: Record<CardColor, string> = {
   Red: "border-black bg-red-500 text-black",
   Yellow: "border-black bg-yellow-500 text-black",
   Green: "border-black bg-green-500 text-black",
   Blue: "border-black bg-blue-500 text-black",
 }
 
-export function DeckPreview() {
-  const deck = useDeck()
-  const { legends, cards } = deck
-  const ram = cardsDb.calculateRam(legends)
-  const count = countCards(deck)
-  const messageLegends = validateDeckLegend(deck)
+function legendsToSearchParams(legends: DeckT["legends"]) {
+  return legends.map((l) => cardsDb.getCustomId(l.id)).join(",")
+}
+function cardsToSearchParams(cards: DeckT["cards"]) {
+  return cards
+    .map((c) => {
+      const id = cardsDb.getCustomId(c.card.id)
+      if (!id) return null
+      return `${id}:${c.count}`
+    })
+    .filter(Boolean)
+    .join(",")
+}
+function cardsFromSearchParams(searchParams: URLSearchParams) {
+  return (searchParams.get("c") || "")
+    .split(",")
+    .map((entry) => {
+      const [i, count] = entry.split(":").map(Number)
+      const id = cardsDb.getOriginalId(i)
+      if (!id) return null
+      return { count, id }
+    })
+    .filter(Boolean)
+}
+function legendsFromSearchParams(searchParams: URLSearchParams) {
+  return (searchParams.get("l") || "")
+    .split(",")
+    .map((i) => cardsDb.getOriginalId(Number(i)))
+    .filter(Boolean)
+}
+
+function ShareDeckButton() {
+  const [isSuccess, setIsSuccess] = React.useState<boolean>(false)
+  const { cards, legends } = useDeck()
+
+  const getUrl = React.useCallback(() => {
+    if (typeof window === "undefined") return ""
+    return (
+      window.location +
+      "?" +
+      new URLSearchParams({
+        l: legendsToSearchParams(legends),
+        c: cardsToSearchParams(cards),
+      }).toString()
+    )
+  }, [legends, cards])
+  const handleShare = React.useCallback(async () => {
+    try {
+      const url = getUrl()
+      await navigator.clipboard.writeText(url)
+      setIsSuccess(true)
+    } catch (err) {
+      setIsSuccess(false)
+    }
+  }, [legends, cards])
+
   return (
-    <div className="sticky flex w-75 flex-col gap-3 bg-muted">
+    <Dialog>
+      <DialogTrigger onClick={handleShare} asChild>
+        <Button>Share Deck</Button>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Share</DialogTitle>
+        </DialogHeader>
+        <DialogDescription>
+          {isSuccess
+            ? "Couldn't copy URL address. Try copying URL below."
+            : "URL has been copied, but if you ever lose it you can copy it from the field below."}
+        </DialogDescription>
+        <Input value={getUrl()} readOnly />
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+export function DeckPreview({
+  className,
+  ...props
+}: React.ComponentProps<"div">) {
+  const deck = useDeck()
+  const { legends, cards, ram, total } = deck
+  const [hasLegendsErrors, legendsErrors] = useLegendRules()
+  const [hasCardsErrors, cardsErrors] = useCardRules()
+
+  return (
+    <article className={cn("flex w-75 flex-col", className)} {...props}>
       <div className="flex flex-col gap-[inherit] bg-primary px-5 py-5 text-primary-foreground">
         <div className="flex items-center justify-between">
           <h2 className="text-xl">Your deck</h2>
-          <ul aria-label="Max ram" className="flex gap-1 h-8">
+          <ul aria-label="Max ram" className="flex h-8 gap-1">
             {Object.values(ram).some((v) => v > 0)
               ? Object.entries(ram).map(([k, v]) =>
                   v > 0 ? (
@@ -240,7 +414,7 @@ export function DeckPreview() {
                       aria-label={`${k} ram`}
                       className={cn(
                         "text-md flex aspect-square items-center justify-center border",
-                        cardColor[k as CardColor]
+                        ramStyles[k as CardColor]
                       )}
                     >
                       {v}
@@ -251,49 +425,70 @@ export function DeckPreview() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-[inherit] px-5">
-        <div className="flex justify-between">
-          <h3>Legends:</h3>
-          <div className="flex gap-1">
-            <Tooltip>
-              <TooltipTrigger>
-                <AccessibleIcon label="Tip">
-                  <QuestionIcon className="text-primary" weight="fill" />
-                </AccessibleIcon>
-              </TooltipTrigger>
-              <TooltipContent>
-                If you want to remove any card from your deck simply click on
-                them!
-              </TooltipContent>
-            </Tooltip>
-            {isError(messageLegends) ? (
-              <Tooltip>
+      <div className="flex flex-col gap-6 px-5 py-8">
+        <div className="flex flex-col gap-3">
+          <div className="flex justify-between">
+            <h3 className="text-lg">Legends:</h3>
+            <div className="flex gap-1">
+              <Tooltip clickable>
                 <TooltipTrigger>
-                  <AccessibleIcon label="Show errors">
-                    <WarningIcon className="size-4 shrink-0 text-destructive" />
+                  <AccessibleIcon label="Tip">
+                    <QuestionIcon
+                      className="size-6 text-primary"
+                      weight="fill"
+                    />
                   </AccessibleIcon>
                 </TooltipTrigger>
-                <TooltipContent className="block">
-                  {messageLegends}
+                <TooltipContent>
+                  If you want to remove any card simply click on them!
                 </TooltipContent>
               </Tooltip>
-            ) : null}
+              {hasLegendsErrors ? (
+                <Tooltip clickable>
+                  <TooltipTrigger>
+                    <AccessibleIcon label="Show errors">
+                      <WarningIcon className="size-6 shrink-0 text-destructive" />
+                    </AccessibleIcon>
+                  </TooltipTrigger>
+                  <TooltipContent className="block">
+                    <ul className="list-inside list-disc">
+                      {legendsErrors.map((e) => (
+                        <li key={e}>{e}</li>
+                      ))}
+                    </ul>
+                  </TooltipContent>
+                </Tooltip>
+              ) : null}
+            </div>
           </div>
+          <Progress value={(legends.length / 3) * 100} />
         </div>
-        <Progress value={(legends.length / 3) * 100} />
         <div className="flex flex-1 flex-col gap-1">
           {legends.length > 0 ? (
-            legends.map((id) => {
-              const card = cardsDb.getById(id)
-              if (!card) return null
+            legends.map((l) => {
               return (
-                <RemoveFromDeckButton key={id} card={card}>
-                  <GameCard
-                    src={card.image_url}
-                    alt={card.name}
-                    className="w-full"
-                  />
-                </RemoveFromDeckButton>
+                <Tooltip key={l.id}>
+                  <TooltipTrigger asChild>
+                    <RemoveFromDeckButton card={l} className="relative">
+                      <GameCard
+                        src={l.image_url}
+                        alt={l.name}
+                        className="w-full"
+                      />
+                      <div className="pointer-events-none absolute top-0 left-0 flex h-full w-full items-center bg-background/40 px-4 text-foreground">
+                        {l.name}
+                      </div>
+                    </RemoveFromDeckButton>
+                  </TooltipTrigger>
+                  <TooltipContent
+                    sideOffset={8}
+                    hideArrow
+                    side="right"
+                    className="bg-transparent p-0"
+                  >
+                    <GameCard src={l.image_url} alt={l.name} />
+                  </TooltipContent>
+                </Tooltip>
               )
             })
           ) : (
@@ -302,34 +497,54 @@ export function DeckPreview() {
             </div>
           )}
         </div>
-        <div className="flex justify-between">
-          <h3>Cards:</h3>
-          <Tooltip>
-            <TooltipTrigger>
-              <AccessibleIcon label="Tip">
-                <QuestionIcon className="text-primary" weight="fill" />
-              </AccessibleIcon>
-            </TooltipTrigger>
-            <TooltipContent>
-              If you want to remove any card from your deck simply click on
-              them!
-            </TooltipContent>
-          </Tooltip>
-        </div>
-        <div className="flex">
-          <Progress value={(count / 40) * 100} className="flex-4" />
-          <Progress
-            value={((count - 40) / 10) * 100}
-            className="flex-1"
-            indicatorClassName="bg-destructive"
-          />
+        <div className="flex flex-col gap-3">
+          <div className="flex justify-between">
+            <h3 className="text-lg">Cards:</h3>
+            <div className="flex gap-1">
+              <Tooltip clickable>
+                <TooltipTrigger>
+                  <AccessibleIcon label="Tip">
+                    <QuestionIcon
+                      className="size-6 text-primary"
+                      weight="fill"
+                    />
+                  </AccessibleIcon>
+                </TooltipTrigger>
+                <TooltipContent>
+                  If you want to remove any card simply click on them!
+                </TooltipContent>
+              </Tooltip>
+              {hasCardsErrors ? (
+                <Tooltip clickable>
+                  <TooltipTrigger>
+                    <AccessibleIcon label="Show errors">
+                      <WarningIcon className="size-6 shrink-0 text-destructive" />
+                    </AccessibleIcon>
+                  </TooltipTrigger>
+                  <TooltipContent className="block">
+                    <ul className="list-inside list-disc">
+                      {cardsErrors.map((e) => (
+                        <li key={e}>{e}</li>
+                      ))}
+                    </ul>
+                  </TooltipContent>
+                </Tooltip>
+              ) : null}
+            </div>
+          </div>
+          <div className="flex">
+            <Progress value={(total / 40) * 100} className="flex-4" />
+            <Progress
+              value={((total - 40) / 10) * 100}
+              className="flex-1"
+              indicatorClassName="bg-destructive"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-1">
           {cards.length > 0 ? (
-            cards.map(({ id, count }) => {
-              const card = cardsDb.getById(id)
-              if (!card) return null
-              return <ValidatedCard key={id} card={card} count={count} />
+            cards.map(({ card, count }) => {
+              return <ValidatedCard key={card.id} card={card} count={count} />
             })
           ) : (
             <div className="m-auto max-w-6/10 text-center text-muted-foreground">
@@ -337,10 +552,15 @@ export function DeckPreview() {
             </div>
           )}
         </div>
-        <Button className="mt-8">Share deck</Button>
+        <ShareDeckButton />
       </div>
-    </div>
+    </article>
   )
+}
+
+export function DeckCount() {
+  const { total, legends } = useDeck()
+  return total + legends.length
 }
 
 function ValidatedCard({
@@ -355,19 +575,30 @@ function ValidatedCard({
   const invalid = isError(message)
 
   const element = (
-    <RemoveFromDeckButton card={card} className="relative">
-      <GameCard
-        src={card.image_url}
-        alt={card.name}
-        className="w-full -translate-y-6/10"
-      />
-      <div className="pointer-events-none absolute top-0 right-0 flex size-10 items-center justify-center rounded-l-sm bg-background/80 text-foreground">
-        x{count}
-      </div>
-      {invalid ? (
-        <div className="pointer-events-none absolute top-0 left-0 flex h-full w-full items-center bg-destructive/40 px-4"></div>
-      ) : null}
-    </RemoveFromDeckButton>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <RemoveFromDeckButton card={card} className="relative">
+          <GameCard src={card.image_url} alt={card.name} className="w-full" />
+          <div className="pointer-events-none absolute top-0 left-0 flex h-full w-full items-center bg-background/40 px-4 text-foreground">
+            {card.name}
+          </div>
+          <div className="pointer-events-none absolute top-0 right-0 flex size-10 items-center justify-center rounded-l-sm bg-background/80 text-foreground">
+            x{count}
+          </div>
+          {invalid ? (
+            <div className="pointer-events-none absolute top-0 left-0 flex h-full w-full items-center bg-destructive/40 px-4"></div>
+          ) : null}
+        </RemoveFromDeckButton>
+      </TooltipTrigger>
+      <TooltipContent
+        sideOffset={8}
+        hideArrow
+        side="right"
+        className="bg-transparent p-0"
+      >
+        <GameCard src={card.image_url} alt={card.name} />
+      </TooltipContent>
+    </Tooltip>
   )
   if (!invalid) return element
   return (
@@ -377,10 +608,10 @@ function ValidatedCard({
       {...props}
     >
       {element}
-      <Tooltip>
+      <Tooltip clickable>
         <TooltipTrigger>
           <AccessibleIcon label="Show errors">
-            <WarningIcon className="size-4 shrink-0 text-destructive" />
+            <WarningIcon className="size-6 shrink-0 text-destructive" />
           </AccessibleIcon>
         </TooltipTrigger>
         <TooltipContent className="block">{message}</TooltipContent>
@@ -389,11 +620,20 @@ function ValidatedCard({
   )
 }
 
+function Fallback({ className, ...rest }: React.ComponentProps<"div">) {
+  return (
+    <div
+      className={cn("flex items-center justify-center p-10", className)}
+      {...rest}
+    />
+  )
+}
+
 export function CompatibleLegends() {
   const deck = useDeck()
+  const [hasErrors] = useLegendRules()
 
-  if (!isError(validateDeckLegend(deck)))
-    return <div className="flex items-center justify-center p-10"> All set</div>
+  if (!hasErrors) return <Fallback> All set!</Fallback>
 
   return cardsDb
     .getLegends()
@@ -407,14 +647,21 @@ export function CompatibleLegends() {
 
 export function CompatibleCards() {
   const deck = useDeck()
-
-  return cardsDb
+  const availableCards = cardsDb
     .getAll()
     .filter((c) => c.card_type !== "Legend")
     .filter((c) => validateNewCard(deck, c) === true)
-    .map((c) => (
-      <AddToDeckButton key={c.id} card={c}>
-        <GameCard src={c.image_url} alt={c.name} />
-      </AddToDeckButton>
-    ))
+
+  if (!availableCards.length)
+    return (
+      <Fallback>
+        There are no more cards that could fit in your deck. Wait for more
+        reveals!
+      </Fallback>
+    )
+  return availableCards.map((c) => (
+    <AddToDeckButton key={c.id} card={c}>
+      <GameCard src={c.image_url} alt={c.name} />
+    </AddToDeckButton>
+  ))
 }

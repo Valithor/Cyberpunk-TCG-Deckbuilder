@@ -5,5 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false, //FIX: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout this is bad but i don't see a better solution atm
+  },
 }
 export default nextConfig

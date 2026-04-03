@@ -121,7 +121,7 @@
     @apply border-primary outline-ring/50;
   }
   body {
-    @apply bg-muted text-foreground;
+    @apply bg-popover text-foreground;
   }
   html {
     @apply font-mono;
