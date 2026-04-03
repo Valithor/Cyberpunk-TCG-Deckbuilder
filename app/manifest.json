@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSit",
-  "short_name": "MySite",
+  "name": "Cyberpunk TCG Deckbuilder",
+  "short_name": "Cyberpunk TCG Deckbuilder",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

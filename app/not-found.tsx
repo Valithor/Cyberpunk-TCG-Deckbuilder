@@ -3,7 +3,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Page not found",
   description: "The requested page could not be found.",
-  metadataBase: new URL("https://valithor.github.io/Cyberpunk-TCG-Deckbuilder/"),
+  metadataBase: new URL("https://valithor.github.io/"),
   robots: {
     index: false,
     follow: false,

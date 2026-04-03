@@ -23,10 +23,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <TooltipProvider>{children}</TooltipProvider>
         <Toaster />
         <Separator />
-        <footer className="p-10 pb-20 text-center text-primary md:pb-10">
-          This is a personal project and is not affiliated with or endorsed by
-          CD PROJEKT RED or Weird Co.
-          <div>Created by TheMoses</div>
+        <footer className="p-10 pb-20 text-center md:pb-10">
+          This is a personal project and is not affiliated with or endorsed by{" "}
+          <span className="text-primary">CD PROJEKT RED</span> or{" "}
+          <span className="text-primary">Weird Co.</span>
+          <div>
+            Created by <span className="text-primary">TheMoses</span>
+          </div>
         </footer>
       </body>
     </html>

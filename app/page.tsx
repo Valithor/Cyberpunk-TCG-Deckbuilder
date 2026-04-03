@@ -5,8 +5,10 @@ import {
   CompatibleLegends,
   Deck,
   DeckCount,
-  DeckIcon,
   DeckPreview,
+  HeadingCards,
+  HeadingLegends,
+  LoadDeck,
 } from "@/components/ui/deck/deck"
 import {
   Drawer,
@@ -17,6 +19,7 @@ import {
 } from "@/components/ui/drawer"
 import { CardList } from "@/components/ui/gameCard"
 import { Separator } from "@/components/ui/separator"
+import { StackIcon } from "@phosphor-icons/react/dist/ssr"
 import { AccessibleIcon } from "@radix-ui/react-accessible-icon"
 
 import type { Metadata } from "next"
@@ -29,9 +32,7 @@ export const metadata: Metadata = {
   },
   description:
     "Build, optimize, and share your Cyberpunk TCG decks. Fast and intuitive deckbuilder for your favourite card game.",
-  metadataBase: new URL(
-    "https://valithor.github.io/Cyberpunk-TCG-Deckbuilder/"
-  ),
+  metadataBase: new URL("https://valithor.github.io"),
 
   applicationName: "Cyberpunk TCG Deckbuilder",
 
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Cyberpunk TCG Deckbuilder",
     description:
       "Build, optimize, and share your Cyberpunk TCG decks. Fast and intuitive deckbuilder for your favourite card game.",
@@ -78,76 +79,73 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <React.Suspense fallback={<main className="sr-only">Loading...</main>}>
-      <Deck>
-        <main className="mx-auto flex h-full w-full flex-1 flex-col gap-4 gap-30 text-sm leading-loose">
-          <div className="flex flex-1 flex-col items-start sm:flex-row">
-            <DeckPreview className="sticky top-0 hidden md:flex" />
-            <Separator orientation="vertical" className="hidden md:block" />
-            <div className="flex flex-1 flex-col gap-6 self-stretch bg-background p-10">
-              <h1 className="py-6 text-center text-3xl">
-                Build your own{" "}
-                <span className="text-primary">Cyberpunk TCG Deck!</span>
-              </h1>
-              <section id="legend">
-                <h2 className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center border border-primary text-2xl text-primary">
-                    1
-                  </div>
-                  <span className="text-lg">
-                    Choose <span className="text-primary">3 legends.</span>
-                  </span>
-                </h2>
-                <div>
-                  <CardList>
-                    <CompatibleLegends />
-                  </CardList>
+    <Deck>
+      <main className="mx-auto flex h-full w-full flex-1 flex-col gap-4 gap-30 text-sm leading-loose">
+        <div className="flex flex-1 flex-col items-start sm:flex-row">
+          <DeckPreview className="sticky top-0 hidden md:flex" />
+          <Separator orientation="vertical" className="hidden md:block" />
+          <div className="flex flex-1 flex-col gap-6 self-stretch bg-background p-10">
+            <h1 className="py-6 text-center text-3xl">
+              Build your own{" "}
+              <span className="text-primary">Cyberpunk TCG Deck!</span>
+            </h1>
+            <section id="legend">
+              <h2 className="flex items-center gap-3">
+                <div className="flex size-10 items-center justify-center border border-primary text-2xl text-primary">
+                  1
                 </div>
-              </section>
-              <Separator />
-              <section id="other">
-                <h2 className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center border border-primary text-2xl text-primary">
-                    2
-                  </div>
-                  <span className="text-lg">
-                    Add at least <span className="text-primary">40 cards.</span>
-                  </span>
-                </h2>
-                <div>
-                  <CardList>
-                    <CompatibleCards />
-                  </CardList>
+                <HeadingLegends />
+              </h2>
+              <div>
+                <CardList>
+                  <CompatibleLegends />
+                </CardList>
+              </div>
+            </section>
+            <Separator />
+            <section id="other">
+              <h2 className="flex items-center gap-3">
+                <div className="flex size-10 items-center justify-center border border-primary text-2xl text-primary">
+                  2
                 </div>
-              </section>
-            </div>
+                <HeadingCards />
+              </h2>
+              <div>
+                <CardList>
+                  <CompatibleCards />
+                </CardList>
+              </div>
+            </section>
           </div>
-          <Drawer direction="top">
-            <DrawerTrigger className="fixed bottom-6 left-6 md:hidden" asChild>
-              <Button size="icon-lg">
-                <AccessibleIcon label="Deck">
-                  <DeckIcon />
-                </AccessibleIcon>
-                <Badge
-                  variant="secondary"
-                  className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
-                >
-                  <DeckCount />
-                </Badge>
-              </Button>
-            </DrawerTrigger>
-            <DrawerContent>
-              <DrawerTitle className="sr-only">Deck</DrawerTitle>
-              <DrawerDescription className="sr-only">
-                Here you can preview and share your deck. Clicking on a card
-                will remove it from the deck. In order to add new cards close
-                this modal and click on cards on the previous view.
-              </DrawerDescription>
-              <DeckPreview className="w-full" />
-            </DrawerContent>
-          </Drawer>
-        </main>
-      </Deck>
-    </React.Suspense>
+        </div>
+        <Drawer direction="top">
+          <DrawerTrigger className="fixed bottom-6 left-6 md:hidden" asChild>
+            <Button size="icon-lg">
+              <AccessibleIcon label="Deck">
+                <StackIcon />
+              </AccessibleIcon>
+              <Badge
+                variant="secondary"
+                className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"
+              >
+                <DeckCount />
+              </Badge>
+            </Button>
+          </DrawerTrigger>
+          <DrawerContent className="overflow-auto p-4">
+            <DrawerTitle className="sr-only">Deck</DrawerTitle>
+            <DrawerDescription className="sr-only">
+              Here you can preview and share your deck. Clicking on a card will
+              remove it from the deck. In order to add new cards close this
+              modal and click on cards on the previous view.
+            </DrawerDescription>
+            <DeckPreview className="w-full" />
+          </DrawerContent>
+        </Drawer>
+      </main>
+      <React.Suspense>
+        <LoadDeck />
+      </React.Suspense>
+    </Deck>
   )
 }
