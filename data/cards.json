@@ -169,6 +169,41 @@
       "legality": "legal"
     },
     {
+      "id": "e6ab6b31-cf5d-4acb-9d83-ce57f1b6718f",
+      "external_id": "cyberpunk:el-sombreron-la-venganza-lenta",
+      "name": "El Sombrerón",
+      "subname": "La Venganza Lenta",
+      "display_name": "El Sombrerón - La Venganza Lenta",
+      "slug": "el-sombreron-la-venganza-lenta",
+      "rules_text": "ATTACK While fighting a rival Unit, double this Unit's power.",
+      "flavor_text": null,
+      "set": {
+        "code": "spoiler",
+        "name": "Spoiler Set"
+      },
+      "rarity": null,
+      "image_url": "cards/e6ab6b31-cf5d-4acb-9d83-ce57f1b6718f.png",
+      "source_image_url": "https://dstcynss47vun.cloudfront.net/prod/cyberpunk/b019.webp",
+      "color": "Red",
+      "card_type": "Unit",
+      "is_eddiable": false,
+      "classifications": [
+        "Ganger",
+        "Valentino"
+      ],
+      "keywords": [
+        "Attack"
+      ],
+      "cost": 4,
+      "power": 4,
+      "ram": 4,
+      "artist": "Rafael de Latorre & Clonerh",
+      "print_number": "019",
+      "printings": [],
+      "selected_printing_id": null,
+      "legality": "legal"
+    },
+    {
       "id": "52233c7f-5e0a-455d-b96b-b87af97bc473",
       "external_id": "cyberpunk:kerry-eurodyne-the-last-rockerboy",
       "name": "Kerry Eurodyne",
@@ -1550,7 +1585,7 @@
       "legality": "legal"
     }
   ],
-  "total": 46,
+  "total": 47,
   "limit": 100,
   "offset": 0
 }
