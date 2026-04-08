@@ -439,6 +439,7 @@ function ShareDeckButton() {
       setIsSuccess(true);
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
+      console.error(err)
       setIsSuccess(false);
     }
   }, [getUrl]);
